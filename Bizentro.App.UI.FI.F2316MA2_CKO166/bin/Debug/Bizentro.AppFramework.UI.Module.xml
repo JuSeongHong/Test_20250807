@@ -1,0 +1,3511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.UI.Module</name>
+    </assembly>
+    <members>
+        <member name="P:Bizentro.AppFramework.UI.Module.AttachFileClass.DocumentNo">
+            <summary>
+            문서 번호(자동 채번 시 난수)
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.AttachFileClass.IsTempData">
+            <summary>
+            임시 첨부 파일 저장 여부
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.TB19029Base">
+            <summary>
+            TB19029Base
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.TB19029Base.#ctor">
+            <summary>
+            Numeric Format 정의 클래스
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.TB19029">
+            <summary>
+            Numeric Format 정의 클래스
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggAmtOfMoney">
+            <summary>
+            Amount of Money Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggQty">
+            <summary>
+            Quantity Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUnitCost">
+            <summary>
+            Unit Cost Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggExchRate">
+            <summary>
+            Exchange Rate Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefined6">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefined7">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefined8">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefined9">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefinedA">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefinedB">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefinedC">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUserDefinedD">
+            <summary>
+            사용자 정의 Numeric Format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggAmtOfMoneyDefault">
+            <summary>
+            Integeral(13), DecPoint(2)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggQtyDefault">
+            <summary>
+            Integeral(9), DecPoint(6)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggUnitCostDefault">
+            <summary>
+            Integeral(9), DecPoint(6)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.TB19029.ggExchRateDefault">
+            <summary>
+            Integeral(9), DecPoint(6)
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.TB19029.#ctor">
+            <summary>
+            Numeric Format 정의 클래스
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.enumTagLockMode">
+            <summary>
+            Lock Mode. New: FormLoad Or InsertRow, Query: After DBQuery
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.enumTagLockMode.New">
+            <summary>
+            FormLoad Or InsertRow
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.enumTagLockMode.Query">
+            <summary>
+            After DBQuery
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.ControlManager">
+            <summary>
+            ControlManager
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.#ctor(Bizentro.AppFramework.UI.Module.ViewBase)">
+            <summary>
+            ControlManager
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ControlManager.gUIControlList">
+            <summary>
+            Open되는 UIList를 저장하는 Data Dictionary
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ControlManager.ProgramId">
+            <summary>
+            Navigation에 필요한 UI정보
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ControlManager.gBaseParameter">
+            <summary>
+            Base Parameter정보 Parameter Type에 의한 분리가 되어짐(zb_base_param Table참고)
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.AddUIControl(System.Type)">
+            <summary>
+            프로그램 id에 해당하는 컨트롤 정보를 cache
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.AddUIControl(System.String)">
+            <summary>
+            프로그램 id에 해당하는 컨트롤 정보를 cache
+            </summary>
+            <param name="execMenuFullID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ControlCollectionsSave(System.Windows.Forms.Control.ControlCollection,System.Type)">
+            <summary>
+            캡션정보를 저장한다.
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ControlCollectionsSave(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            캡션정보를 저장한다.
+            </summary>
+            <param name="control"></param>
+            <param name="execMenuFullID"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InterationGetControl(System.Windows.Forms.Control,System.Data.DataTable,System.String)">
+            <summary>
+            InterationGetControl
+            </summary>
+            <param name="control"></param>
+            <param name="dt"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetuniControl(System.Windows.Forms.Control,System.Data.DataRowCollection,System.Data.DataRow)">
+            <summary>
+             각 컨트롤의 Text 또는 Alt속성을 가져와서 DataRow에 반영을 한다.
+            </summary>
+            <param name="control"></param>
+            <param name="dc"></param>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitializeComponents(System.Windows.Forms.Control.ControlCollection,System.Type)">
+            <summary>
+            DB에서 호출한 데이타 구조를 다시 컨트롤에 텍스트를 바인딩한다. 
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitializeComponents(System.Windows.Forms.Control.ControlCollection,System.String)">
+            <summary>
+            DB에서 호출한 데이타 구조를 다시 컨트롤에 텍스트를 바인딩한다. 
+            </summary>
+            <param name="control"></param>
+            <param name="execFullMenuID"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ApplyDDToDynamicGrid(System.Windows.Forms.Control)">
+            <summary>
+            동적 그리드의 경우 DD 표현
+            </summary>
+            <param name="ctrl"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ApplyDDToDynamicGrid(System.Windows.Forms.Control,System.Int32)">
+            <summary>
+            동적 그리드의 경우 DD 표현
+            </summary>
+            <param name="ctrl"></param>
+            <param name="StartIndex"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ApplyDDToDynamicSpreadSheet(System.Windows.Forms.Control)">
+            <summary>
+            동적 그리드의 경우 DD 표현
+            </summary>
+            <param name="ctrl"></param>
+            <param name="StartIndex"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.Language(System.Data.DataRow,System.String)">
+            <summary>
+             언어별로 캡션을 적용한다.
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ControlCollections">
+            <summary>
+            컨트롤 정보를 저장하기 위한 DataSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeCalendarDD(System.Windows.Forms.Control,System.Collections.Generic.Dictionary{System.String,System.Data.DataRow})">
+            <summary>
+            컨트롤 반복
+            </summary>
+            <param name="control"></param>
+            <param name="controls"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.MainSetUIControlDefaultValueWithDBDD">
+            <summary>
+            컨트롤에 DD 및 Default Value 적용
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetUIDefaultValue(System.Data.DataTable,System.Boolean,System.Boolean)">
+            <summary>
+            UI 기본값 설정
+            </summary>
+            <param name="dt"></param>
+            <param name="isCondition"></param>
+            <param name="isInsertRow"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetSQLContentsSetControlValue(System.String,System.Boolean)">
+            <summary>
+            '#' 으로 구분되어 있는 SQL구문에 컨트롤 값을 넣어 주기
+            </summary>
+            <param name="strSQL"></param>
+            <param name="isFilterVar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetLanguaget(System.Data.DataRow)">
+            <summary>
+            Datarow 에서 언어별로 설정
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetLanguagetFullName(System.Data.DataRow)">
+            <summary>
+            Get DD Full Name
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeUIDDControlCaptionWithDBDD(System.Windows.Forms.Control,System.String,System.String,System.String,System.Data.DataRow)">
+            <summary>
+            각 컨트롤에 속성을 적용한다.
+            </summary>
+            <param name="control"></param>
+            <param name="pLabel"></param>
+            <param name="defaultValue"></param>
+            <param name="pLabelFullName"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitView(System.Windows.Forms.Control,System.Data.DataSet,Bizentro.AppFramework.UI.Module.TB19029)">
+            <summary>
+            InitView
+            </summary>
+            <param name="controlContainer"></param>
+            <param name="viewDataSet"></param>
+            <param name="viewTB19029"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeFieldLockAttribute(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.FieldLockAttribute)">
+            <summary>
+            컨트롤의 필수입력여부 변경
+            </summary>
+            <param name="ctr"></param>
+            <param name="pFieldLockAttribute"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ClearFields(System.Windows.Forms.Control)">
+            <summary>
+            컨트롤 및 컨트롤 하위 컨트롤 데이터를 초기화
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ClearFields(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+            컨트롤 및 컨트롤 하위 컨트롤 데이터를 초기화
+            </summary>
+            <param name="container"></param>
+            <param name="panelType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.CheckFields(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+            필수 입력여부 확인
+            </summary>
+            <param name="container"></param>
+            <param name="panelType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.CheckField(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+            필수 입력여부 확인
+            </summary>
+            <param name="control"></param>
+            <param name="panelType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.LockFields(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Module.enumTagLockMode)">
+            <summary>
+            LockFields
+            </summary>
+            <param name="container"></param>
+            <param name="actionMode"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SelecteTabControl(System.Windows.Forms.Control)">
+            <summary>
+            상위탭 검색후 활성
+            </summary>
+            <param name="sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeTree(Bizentro.AppFramework.UI.InfragisticsCAB.WinForms.UltraExplorerBarWorkspace,Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+             트리메뉴의 업무 구룹을 Business Menu에 추가하는 로직
+             
+            </summary>
+            <param name="explorerBarWorkspace"></param>
+            <param name="ToolbarsManager"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeTree(Infragistics.Win.UltraWinTree.UltraTree,System.String,Infragistics.Win.UltraWinToolbars.UltraToolbarsManager)">
+            <summary>
+             리본을 사용 하지 않는 경우 일반 툴바 형태의 메인 메뉴와 툴바를 생성하고 처리한다.
+            </summary>
+            <param name="explorerBarTree"></param>
+            <param name="Target"></param>
+            <param name="ToolbarsManager"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ChangeTree(Microsoft.Practices.CompositeUI.WorkItem)">
+            <summary>
+            
+            </summary>
+            <param name="SenderWorkItem"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetNewToolFromNode(Infragistics.Win.UltraWinToolbars.PopupMenuTool,Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            노드와 베이스 툴을 받아 하위 노드 처리
+            </summary>
+            <param name="basetool"></param>
+            <param name="node"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetRootTool(Infragistics.Win.UltraWinToolbars.ToolBase)">
+            <summary>
+            요청 툴의 루트 툴반환
+            </summary>
+            <param name="Sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.PopupLoad(System.String,Bizentro.AppFramework.UI.Controls.Popup.PopupRunningInfo,Microsoft.Practices.CompositeUI.WorkItem)">
+            <summary>
+            Popup 띄우기
+            </summary>
+            <param name="programID"></param>
+            <param name="popupRunningInfo"></param>
+            <param name="workItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.LoadView(Bizentro.AppFramework.UI.Interface.Services.LoadingModuleInfo,Microsoft.Practices.CompositeUI.WorkItem)">
+            <summary>
+             화면을 Mdi Workspace에 추가한다.
+            </summary>
+            <param name="senderKeys"></param>
+            <param name="workItem"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.LoadModuleView(Bizentro.AppFramework.UI.Interface.Services.LoadingModuleInfo,Microsoft.Practices.CompositeUI.WorkItem,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="loadInfos"></param>
+            <param name="workItem"></param>
+            <param name="workspaceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.LoadModuleView(Bizentro.AppFramework.UI.Interface.Services.LoadingModuleInfo,Microsoft.Practices.CompositeUI.WorkItem,System.String,Microsoft.Practices.CompositeUI.SmartParts.ISmartPartInfo)">
+            <summary>
+            
+            </summary>
+            <param name="loadInfos"></param>
+            <param name="workItem"></param>
+            <param name="workspaceName"></param>
+            <param name="smartPartInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetLoadInfos(System.String,Bizentro.AppFramework.UI.Variables.enumDef.GetMenuInfoKeyType)">
+            <summary>
+            
+            </summary>
+            <param name="GetKey"></param>
+            <param name="KeyType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.CreateToolbar(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            ToolBar를 생성한다.
+            </summary>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+            <param name="_dockedColumn"></param>
+            <param name="_dockedRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.CreateMainToolbar(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+             메인 ToolBar를 생성한다.
+            </summary>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+            <param name="_dockedColumn"></param>
+            <param name="_dockedRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.AddRootMenu(Infragistics.Win.UltraWinToolbars.UltraToolbar,System.String,System.String)">
+            <summary>
+             sender Toolbar Add PopupMenuTool
+            </summary>
+            <param name="ultraToolbar"></param>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.AddSubMenu(Infragistics.Win.UltraWinToolbars.PopupMenuTool,System.String,System.String)">
+            <summary>
+             sender PopupMenuTool Add PopupMenuTool
+            </summary>
+            <param name="popupMenuTool"></param>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.EnabledChange(Infragistics.Win.UltraWinToolbars.UltraToolbar,System.Boolean)">
+            <summary>
+            toolbar Tools EnabledChange
+            </summary>
+            <param name="toolBar"></param>
+            <param name="fixSetValue"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.EnabledChange(Infragistics.Win.UltraWinToolbars.UltraToolbar,System.String,System.Boolean)">
+            <summary>
+            toolbar Tool EnabledChange
+            </summary>
+            <param name="toolBar"></param>
+            <param name="_key"></param>
+            <param name="fixSetValue"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolEnabledChange(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            toolbarsManager Tool EnabledChange
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="fixSetValue"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolbarManagerEnabledChange_Sub(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 하위 툴 일괄 처리 Enable
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="fixSetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolbarManagerToolVisibleChange_Sub(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 하위 툴 일괄 처리 Visible
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="fixSetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolbarManagerToolVisibleChange(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 검색 대상 처리 Visible
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="fixSetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.RibbonTabAdd(System.String,System.String)">
+            <summary>
+            RibbonTab Add
+            </summary>
+            <param name="_key"></param>
+            <param name="_caption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.RibbonGroupAdd(System.String,System.String)">
+            <summary>
+            RibbonGroup Add
+            </summary>
+            <param name="_key"></param>
+            <param name="_caption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetNewTool(System.String,System.String,System.String)">
+            <summary>
+            Create NewTool
+            </summary>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+            <param name="ToolType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetNewToolContainer(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_caption"></param>
+            <param name="_key"></param>
+            <param name="ToolType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetToolbarControl(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ToolbarsManager"></param>
+            <param name="Target_key"></param>
+            <param name="ToolType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetToolbarControl(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ToolbarsManager"></param>
+            <param name="_parent"></param>
+            <param name="_key"></param>
+            <param name="_state"></param>
+            <param name="ToolType"></param>
+            <param name="ContainerKey"></param>
+            <param name="isFirstGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolbarManagerRemove(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+            대상키 검색 후 검색 대상 삭제
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SetRibbonGroup(Infragistics.Win.UltraWinToolbars.RibbonGroup,System.String)">
+            <summary>
+             리본의 구룹의 스타일에 따라 처리한다.
+            </summary>
+            <param name="ribbonGroup"></param>
+            <param name="strTooldisplayStyle"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.SaveToolbarsState(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="toolbarsManager"></param>
+            <param name="programId"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.LoadToolbarsState(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="toolbarsManager"></param>
+            <param name="programId"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ToolbarManager_StateChange(Bizentro.AppFramework.UI.Common.UniToolbarVisableType,Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+            매니저/ 대상키/ 설정 대상/ 설정값
+            </summary>
+            <param name="SenderType"></param>
+            <param name="ToolbarsManager"></param>
+            <param name="SenderKey"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.GetToolFullPath(Infragistics.Win.UltraWinToolbars.ToolBase)">
+            <summary>
+            
+            </summary>
+            <param name="Sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitToolnTree(Microsoft.Practices.CompositeUI.WorkItem,System.Data.DataSet)">
+            <summary>
+            
+            </summary>
+            <param name="RootWorkItem"></param>
+            <param name="ds"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitToolbar(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.Data.DataSet)">
+            <summary>
+             데이터 셋을 받아서 메인 메뉴와 툴바를 생성한다.
+            </summary>
+            <param name="ToolbarsManager"></param>
+            <param name="ds"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.InitToolbar(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="ToolbarsManager"></param>
+            <param name="dt"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.FilterVar(System.Object,System.String,System.String,System.Boolean)">
+            <summary>
+            DB 저장 문자열로 변경
+            </summary>
+            <param name="pData"></param>
+            <param name="pStrALT"></param>
+            <param name="pOpt"></param>
+            <param name="pvIsTrim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ShowExternalServiceKind(System.String)">
+            <summary>
+            연말정산, PRM 등의 로그인이 틀린 모듈 실행(SSO 포함)
+            </summary>
+            <param name="extServiceKind">@YEAREND or @PRM</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ControlManager.ShowExternalServiceKind(Bizentro.AppFramework.UI.Variables.enumDef.ExternalServiceKind)">
+            <summary>
+            연말정산, PRM 등의 로그인이 틀린 모듈 실행(SSO 포함)
+            </summary>
+            <param name="extServiceKind"></param>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ControlManager.BaseControls">
+            <summary>
+            ViewBase에서 ClickEvent로 만들기 위한 Control 배열
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.ControlManager.LoadPopupInfo">
+            <summary>
+            Popup Information data Container
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ControlManager.LoadPopupInfo.JumpData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ControlManager.LoadPopupInfo.ProgrmaId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:UniControlType">
+            <summary>
+            uniControls Type
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniButton">
+            <summary>
+            1
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniCheckBox">
+            <summary>
+            2
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniCombo">
+            <summary>
+            3
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniDateTime">
+            <summary>
+            4
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniLabel">
+            <summary>
+            5
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniNumeric">
+            <summary>
+            6
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniPictureBox">
+            <summary>
+            7
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniRadioButton">
+            <summary>
+            8
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniTextBox">
+            <summary>
+            9
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniMaskedEdit">
+            <summary>
+            10
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniOpenPopup">
+            <summary>
+            11
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniDateTerm">
+            <summary>
+            12
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniGroupBox">
+            <summary>
+            13
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniTabControl">
+            <summary>
+            14
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniGrid">
+            <summary>
+            15
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniTableLayoutPanel">
+            <summary>
+            16
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniRichTextBox">
+            <summary>
+            17
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniWebEditor">
+            <summary>
+            18
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniBulkCopyPopup">
+            <summary>
+            19
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniSpreadSheet">
+            <summary>
+            20
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniExpandableGroupBox">
+            <summary>
+            21
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniPivotGrid">
+            <summary>
+            22
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniOlapDataSelector">
+            <summary>
+            23
+            </summary>
+        </member>
+        <member name="F:UniControlType.uniPivotSelector">
+            <summary>
+            24
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Bizentro.AppFramework.UI.Module.DrillDownService.menu_ToolClick(System.Object,Bizentro.AppFramework.UI.Controls.uniControls.JumpToEventArgs)" -->
+        <member name="F:Bizentro.AppFramework.UI.Module.FloatingWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.FloatingWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.FloatingWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.frmHelp.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.frmHelp.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.frmHelp.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.PopupModule.PopupViewLoader``1(``0)">
+            <summary>
+            Load to Popup Form information
+            </summary>
+            <param name="ds"></param>
+            <param name="objPop"></param>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._autoMultiPopup">
+            <summary>
+            자동화 팝업 호출 ID
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._MenuFullID">
+            <summary>
+            실제 DLL의 Namespace
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._MenuID">
+            <summary>
+            실행한 메뉴의 ProgramID
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._execMenuFullID">
+            <summary>
+            실행한 메뉴 Full ID
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._execBizModule">
+            <summary>
+            실행한 메뉴 업무 모듈
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase._isMakeAuthenticateInDataMerge">
+            <summary>
+            uniBase의 Data Merge Method 사용 시에 자료 권한 Method를 Call할지
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.popup">
+            <summary>
+             when user click toolbar TemplateSave ,then this method will be called
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPDW_Play">
+            <summary>
+             when user click toolbar TemplateOpen ,then this method will be called
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPDW_Reservation">
+            <summary>
+             when user click toolbar RESERVATION ,then this method will be called
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnAttachFile">
+            <summary>
+             when user click toolbar AttachFile ,then this method will be called
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnChangeLanguage">
+            <summary>
+            언어 변경 시 호출
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.CalledByPortal(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Portal에서 넘어온 파라미터가 있을경우에 호출 됨.
+            </summary>
+            <param name="parameters">Portal에서 넘어온 파라미터</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GatheringCodeBase(System.Windows.Forms.Control)">
+            <summary>
+            화면내의 콤보 콘트롤을 뒤진다.
+            </summary>
+            <param name="container"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Bizentro.AppFramework.UI.Module.ViewBase.LoadDefaultDB" -->
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.InitializeLayout">
+            <summary>
+            컨트롤 언어별 적용
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ChangeLanguage">
+            <summary>
+            언어 변경 적용
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MouseElement(System.Object,Infragistics.Win.UIElementEventArgs)">
+            <summary>
+            마우스 커서 변경 이벤트
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetSmartPartInfo(System.Type)">
+            <summary>
+             MdiTabWorkSpace에 제공할 정보를 등록한다.
+            </summary>
+            <param name="smartPartInfoType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.InitGolbalVariables">
+            <summary>
+            Single 관련 View일 경우 viewDBSabeMode를 CreateMode로 변경, Working DataSet Clear, InitLocalVariables() 호출
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.SetGlobalDefaultValue">
+            <summary>
+            Single 관련 View일 경우 One Row추가 후 SetLocalDefaultValue() 호출
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.SaveDDInformation">
+            <summary>
+            Control의 DD 저장
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetChangesView">
+            <summary>
+            View의 변경 여부
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetChangesView(System.Windows.Forms.Control)">
+            <summary>
+            View의 변경 여부
+            </summary>
+            <param name="view"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.FormatFieldByObjectOfCur(Bizentro.AppFramework.UI.Controls.uniNumeric,System.String,Bizentro.AppFramework.UI.Variables.enumDef.NumericType)">
+            <summary>
+            숫자형 싱글 컨트롤의 포맷을 통화에 맞춰서 변하게 한다.
+            </summary>
+            <param name="control"></param>
+            <param name="DocumentCurrency"></param>
+            <param name="NumberType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.SetStyle">
+            <summary>
+            Style을 Bizentro_Default.isl에 적용되어 있는 Style로 변경
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.SetToolBar(Bizentro.AppFramework.UI.Common.UniToolbarVisableType,System.String[])">
+            <summary>
+            툴바 변경
+            </summary>
+            <param name="toolbarType"></param>
+            <param name="strToolKeys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnDataSave(Bizentro.AppFramework.UI.Module.ViewBase.DataSaveEventCause)">
+            <summary>
+            DataSave 이벤트를 발생시킨다.
+            </summary>
+            <param name="cause">이벤트 발생 원인</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncQuery">
+            <summary>
+            OnFncQuery전에 호출, 조회 조건의 필수 입력 체크
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncQuery">
+            <summary>
+            툴바의 조회 버튼 클릭 시 발생
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncQuery">
+            <summary>
+            OnFncQuery 후에 호출, viewDBSaveMode를 Update모드로 변경
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncNew">
+            <summary>
+            OnFncNew 전에 호출, 변경 여부 확인
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncNew">
+            <summary>
+            툴바의 신규 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncNew">
+            <summary>
+            OnFncNew 후에 호출, viewDBSaveMode를 CreateMode모드로 변경
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncSave">
+            <summary>
+            OnFncSave 전에 호출, 필수 입력값 체크
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncSave">
+            <summary>
+            툴바의 저장 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncSave">
+            <summary>
+            OnFncSave 후에 호출, 조회 작업
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncDelete">
+            <summary>
+            OnFncDelete전에 호출, viewDBSaveMode가 UpdateMode가 아니면 메시지 표시
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncDelete">
+            <summary>
+            툴바의 삭제 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncDelete">
+            <summary>
+            OnFncDelete 후에 호출, 신규 작업
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncInsertRow">
+            <summary>
+            OnFncInsertRow 전에 호출, viewDBSaveMode를 UpdateMode로 변경 및 그리드 Row 추가
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncInsertRow">
+            <summary>
+            툴바 행추가 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncInsertRow">
+            <summary>
+            OnFncInsertRow 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncCopyRow">
+            <summary>
+            OnFncCopyRow 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncCopyRow">
+            <summary>
+            툴바 행복사 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncCopyRow">
+            <summary>
+            OnFncCopyRow 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncDeleteRow">
+            <summary>
+            OnFncDeleteRow 전에 호출, Grid Delete Row
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncDeleteRow">
+            <summary>
+            툴바 행삭제 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncDeleteRow">
+            <summary>
+            OnFncDeleteRow 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncCancel">
+            <summary>
+            OnFncCancel 전에 호출, grid editUndo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncCancel">
+            <summary>
+            툴바 행취소 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncCancel">
+            <summary>
+            OnFncCancel 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncPrev">
+            <summary>
+            OnFncPrev 전에 호출, 데이터 변경 여부 및 조회가 먼저 되었는지 확인.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncPrev">
+            <summary>
+            툴바 이전 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncPrev">
+            <summary>
+            OnFncPrev후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncNext">
+            <summary>
+            OnFncNext 전에 호출, 데이터 변경 여부 및 조회가 먼저 되었는지 확인.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncNext">
+            <summary>
+            툴바 다음 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncNext">
+            <summary>
+            OnFncNext 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncCopy">
+            <summary>
+            OnFncCopy 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncCopy">
+            <summary>
+            툴바 복사 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncCopy">
+            <summary>
+            OnFncCopy후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncExcel">
+            <summary>
+            OnFncExcel 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncExcel">
+            <summary>
+            툴바 Excel 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncExcel">
+            <summary>
+            OnFncExcel 후에 호출 실질적으로 Excel Export
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncPrint">
+            <summary>
+            OnFncPrint 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncPrint">
+            <summary>
+            툴바 출력 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncPrint">
+            <summary>
+            OnFncPrint 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncFind">
+            <summary>
+            OnFncFind 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncFind">
+            <summary>
+            툴바 찾기 버튼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncFind">
+            <summary>
+            OnFncFind 후에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPreFncHelp">
+            <summary>
+            OnFncHelp 전에 호출
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFncHelp">
+            <summary>
+            help
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostFncHelp">
+            <summary>
+            OnFncHelp 후에 호출, 실질적으로 Help Open
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MakeMoveToNextData(Bizentro.AppFramework.UI.Module.DataToMove)">
+            <summary>
+            MakeMoveToNextData
+            </summary>
+            <param name="moveArg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MakeMoveToPrevData(Bizentro.AppFramework.UI.Module.DataToMove)">
+            <summary>
+            MakeMoveToPrevData
+            </summary>
+            <param name="moveArg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.CheckMoveToNextResult(System.Data.DataSet)">
+            <summary>
+            CheckMoveToNextResult
+            </summary>
+            <param name="moveDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.CheckMoveToPrevResult(System.Data.DataSet)">
+            <summary>
+            CheckMoveToPrevResult
+            </summary>
+            <param name="moveDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MergeMoveToNextData(System.Data.DataSet,Bizentro.AppFramework.UI.Module.DataToMove)">
+            <summary>
+            MergeMoveToNextData
+            </summary>
+            <param name="moveDs"></param>
+            <param name="moveArg"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MergeMoveToPrevData(System.Data.DataSet,Bizentro.AppFramework.UI.Module.DataToMove)">
+            <summary>
+            MergeMoveToPrevData
+            </summary>
+            <param name="moveDs"></param>
+            <param name="moveArg"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnSetStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.ActiveCommandButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.DoCommands(System.String)">
+            <summary>
+            툴바 버튼 클릭.
+            </summary>
+            <param name="cType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.Bizentro#AppFramework#UI#Common#IViewBase#ChangeDesignTheme">
+            <summary>
+            디자인 테마 변경 관련
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ChangeDesignTheme(System.Boolean)">
+            <summary>
+            디자인 테마 변경 관련
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.uniControlLoad">
+            <summary>
+            모든 자식 컨트롤들의 Load() 메서드를 호출한다.
+            뷰의 모든 상태가 안정된 상태에서 이 메서드가 호출된다.
+            각 자식 컨트롤에서는 Load 메서드에서 특정 로직을 구현할 수 있다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.TakeVirgin">
+            <summary>
+            DirtyCheckControls에 포함된 컨트롤드에 대하여 
+            uni_TakeVirgin 메서드를 호출해 준다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnCollectCheckControls">
+            <summary>
+            IsDirty 속성을 조사할 컨트롤들의 목록을 생성한다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.Bizentro#AppFramework#UI#Controls#uniControls#IUniViewControl#RunDynamicFormatService(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="pEvent"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetMenuID">
+            <summary>
+            Simple Program ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetCurrentProgramKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GetPopupProgramKey(Bizentro.AppFramework.UI.Controls.Popup.PopupRunningInfo@)">
+            <summary>
+            
+            </summary>
+            <param name="popupRunningInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnResize(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Bizentro.AppFramework.UI.Module.ViewBase._searchDataControlCollection" -->
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.DataSearch(System.String,Bizentro.AppFramework.UI.Variables.enumDef.SingleORMulti,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="searchText"></param>
+            <param name="area"></param>
+            <param name="isCompareLowerUpper"></param>
+            <param name="isExact"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.HasNext(Bizentro.AppFramework.UI.Variables.enumDef.SingleORMulti,System.Windows.Forms.Form)">
+            <summary>
+            
+            </summary>
+            <param name="area"></param>
+            <param name="frmFind"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ExcelUniGridData(System.String,System.String)">
+            <summary>
+            report  the uniGrid
+            </summary>
+            <param name="savePath"></param>
+            <param name="sheetName"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ExcelUniGridData(System.String,System.String,System.Boolean)">
+            <summary>
+            report  the uniGrid
+            </summary>
+            <param name="savePath"></param>
+            <param name="sheetName"></param>
+            <param name="showProgramTitleOrNot"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GridInTabControlPage(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Controls.uniGrid,System.String@,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="container"></param>
+            <param name="grid"></param>
+            <param name="pageKey"></param>
+            <param name="excelSheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.printCondPanelCollection">
+            <summary>
+            
+            </summary>
+            
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.FindActiveMultiOperationControl(System.Windows.Forms.Control)">
+            <summary>
+            Find Active MultiOperation Control
+            </summary>
+            <param name="container"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.FindActiveGrid(System.Windows.Forms.Control)">
+            <summary>
+            Find Active Grid. wonho.choe 2007-12-14
+            </summary>
+            <param name="container"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ShowFloatingWindow(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="PopupFullID"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.ShowFloatingWindow(System.String,Bizentro.AppFramework.UI.Controls.Popup.PopupPassData)">
+            <summary>
+            
+            </summary>
+            <param name="PopupFullID"></param>
+            <param name="passData"></param>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.MyContainer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnFloatingWindowClosed(Bizentro.AppFramework.UI.Module.FloatingWindowEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.MdiParent_SizeChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.JumpProgram(System.String)">
+            <summary>
+            Use this method to open another UI directly
+            </summary>
+            <param name="ProgramID">The UI's ID that you want to jump. It is the short ID, like "S3111MA1"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.JumpProgram(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            (SR:BA09291[드릴다운 기능 문의 ]) JumpProgram에 매개변수를 넘겨서 자동조회까지 할수 있게하기!
+            </summary>
+            <param name="programID">Short Menu ID (ex:S3111MA1)</param>
+            <param name="parameters">Parameter ControlName, ControlValue</param>
+            <param name="autoQuery">자동 조회 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.OnPostJumpProgram(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            드릴다운 기능이 끝난 후 Module View 에서 어떤 파라미터가 왔는지 알기 위한 메소드
+            </summary>
+            <param name="parameters">JumpProgram 메소드에서 넘어온 파라미터</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.AuthenticateControlValue(System.String,System.String,System.String)">
+            <summary>
+            권한 체크
+            </summary>
+            <param name="ControlName"></param>
+            <param name="Value"></param>
+            <param name="uniALT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.AuthenticateControlValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            권한 체크
+            </summary>
+            <param name="GridName"></param>
+            <param name="ColumnName"></param>
+            <param name="Value"></param>
+            <param name="CloumnCaption"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Bizentro.AppFramework.UI.Module.ViewBase.GridMakeAuthenticate(Bizentro.AppFramework.UI.Controls.uniGrid)" -->
+        <!-- Badly formed XML comment ignored for member "M:Bizentro.AppFramework.UI.Module.ViewBase.GridMakeAuthenticate(System.Data.DataTable)" -->
+        <!-- Badly formed XML comment ignored for member "M:Bizentro.AppFramework.UI.Module.ViewBase.PresenterMakeAuthenticate" -->
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GridResetSummaryFormat">
+            <summary>
+            Summary Format은 컬럼 기준으로 적용 되므로, Currency 등이 변경 될때마다 소숫점이 변경된다면
+            해당 메소드를 호출하여 Summary에 Format을 다시 정의 해준다.(조회 Or 데이터의 소숫점의 위치가 변경될 때마다 적용해줘야함.)
+            가장 소숫점이 많은 데이터를 기준으로 Summary Format을 재정의 해줌.
+            Summary가 정의된 컬럼 전체 Format Reset.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.GridResetSummaryFormat(System.Data.DataTable)">
+            <summary>
+            Summary Format은 컬럼 기준으로 적용 되므로, Currency 등이 변경 될때마다 소숫점이 변경된다면
+            해당 메소드를 호출하여 Summary에 Format을 다시 정의 해준다.(조회 Or 데이터의 소숫점의 위치가 변경될 때마다 적용해줘야함.)
+            가장 소숫점이 많은 데이터를 기준으로 Summary Format을 재정의 해줌.
+            Summary가 정의된 컬럼 전체 Format Reset.
+            </summary>
+            <param name="destDt"></param>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBase.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.viewDBSaveMode">
+            <summary>
+            CUD 모드
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.viewDataSet">
+            <summary>
+            화면의 콤보(싱글,멀티) 전역 데이타셋
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.viewComboSqlList">
+            <summary>
+            컬럼 정보를 담는 HashTable
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.viewTB19029">
+            <summary>
+            viewTB19029
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.duringInit">
+            <summary>
+            duringInit
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.Presenter">
+            <summary>
+            Sets the presenter. The dependency injection system will automatically
+            create a new presenter for you.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ModuleType">
+            <summary>
+            enumDef.ModuleType.GeneralModule
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ProgramTitle">
+            <summary>
+            ProgramTitle
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ExecMenuFullID">
+            <summary>
+            실행한 메뉴 Full ID
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.AutoMultiPopup">
+            <summary>
+            자동화 팝업 호출 ID
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ExecBizModule">
+            <summary>
+            실행한 메뉴 업무 모듈
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ActiveGrid">
+            <summary>
+            해당 View에서 Active된 Grid
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ActiveMultiControl">
+            <summary>
+            해당 View에서 Active된 Grid
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.AllAuthObjects">
+            <summary>
+            권한 List
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.IsDirty">
+            <summary>
+            뷰의 데이터를 저장할 필요가 있는지 여부를 반환.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.Bizentro#AppFramework#UI#Controls#uniControls#IUniViewControl#ActiveCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.WorkingDataSet">
+            <summary>
+            View의 WorkingDataSet
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.ViewType">
+            <summary>
+            ViewType
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.SingleTables">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.MultiTable1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBase.MultiTable2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.ViewBase.BaseVariable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.BaseVariable.ModuleCode">
+            <summary>
+            MuduleInitial
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.ViewBase.BaseVariable.FormType">
+            <summary>
+            Input/Query
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.PopupViewBase.SetLayoutBasePanel(Bizentro.AppFramework.UI.Controls.uniTableLayoutPanel,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="outerMostPanel"></param>
+            <param name="isToolBar">Popup 툴바 적용 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.Reservation.ProcessMessage(System.Web.Services.Protocols.SoapMessage)">
+            <summary>
+            The primary use of the SoapMessage class is for SOAP extension,representing the daa in a SOAP request or SOAP
+            response when the ProcessMessage method is called ,a SoapExtension receives a ProcessMessage at each SoapMessageStage
+            
+            SoapMessageStage.BeforeSerialize :This stage just prior to a ProcessMessage being serialized
+            During SoapClientMessage processing ,the BeforeSerialize  stage occurs after a client invokes an xml web
+            service method ,but prior to the invocation being serialized.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.GetMenuID">
+            <summary>
+            get meunuid
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.SnapshotSave">
+            <summary>
+            snapshot save ,a snapshot include controls value and variable value and toolbar status and gridstyle 
+            namely a snapshot is a status of the current ui
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.SnapshotRecovery">
+            <summary>
+            Snapshot Recovery 
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.SnapshotDataSerizlizerToXml(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             serialize the object to string 
+            </summary>
+            <param name="target">target need to be serialized  </param>
+            <returns> return the serizelized string </returns>
+            
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.XmlDserizlizerToSnapshotData(System.String)">
+            <summary>
+             dserialize the string to object 
+            </summary>
+            <param name="objType">target type </param>
+            <param name="str">which string need to be  dserialized </param>
+            <returns> return the serizelized string </returns>
+            
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.ToolBarSave(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             toolbar save
+            </summary>
+            <param name="snapshotData">save to which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.ControlSave(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             control save
+            </summary>
+            <param name="snapshotData">save to which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.VariableSave(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             Variable save
+            </summary>
+            <param name="snapshotData">save to which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.GridStylesSave(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             GridStyles save
+            </summary>
+            <param name="snapshotData">save to which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.VariableRecovery(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             Variable Recovery
+            </summary>
+            <param name="snapshotData"> Variable Recovery from which snapshot </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.GridStatusImageRecovery">
+            <summary>
+             GridStatus Image Recovery
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.GridRowSequenceRecovery(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             GridRow Sequence  Recovery
+            </summary>
+            <param name="snapshotData"> GridRow Sequence  Recovery from which snapshot </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.CheckSaveArea(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+             Check SaveArea
+            </summary>
+            <param name="container">UI Controls's collection container</param>
+            <param name="saveArea">which area user want to save  ,for example conditon area or data area  or both</param>
+            <returns>  return true  if the ui find the area need to save</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.ControlsRecovery(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+             Controls Recovery
+            </summary>
+            <param name="snapshotData">Recovery from which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.ControlRecovery(Bizentro.AppFramework.UI.Module.SnapshotData,Bizentro.AppFramework.UI.Controls.uniControls.IUniInputControl)">
+            <summary>
+            each Control Recovery
+            </summary>
+            <param name="snapshotData">Recovery from which snapshot</param>
+            <param name="control">which control need to be Recoveried</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.SnapshotService.GridDataRecovery(Bizentro.AppFramework.UI.Module.SnapshotData)">
+            <summary>
+            Grid Data Recovery
+            </summary>
+            <param name="snapshotData">Recovery from which snapshot</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.#ctor(Bizentro.AppFramework.UI.Module.ViewBase,Bizentro.AppFramework.UI.Module.uniBaseClass)">
+            <summary>
+            UCommonClass
+            </summary>
+            <param name="viewBase"></param>
+            <param name="uBase"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ChangeFieldLockAttribute(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.FieldLockAttribute)">
+            <summary>
+            컨트롤의 필수입력여부 변경
+            </summary>
+            <param name="pControl"></param>
+            <param name="pFieldLockAttribute"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.InvokeSetLocalDefaultValue(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ValidateData(System.Object,System.String)">
+            <summary>
+            데이타 유효성 체크
+            </summary>
+            <param name="value"></param>
+            <param name="pOpt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarAll(System.Boolean)">
+            <summary>
+            Common / Multi / Single 툴바 전체 EnableOrDisable
+            </summary>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarSingle(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitSingle,System.Boolean)">
+            <summary>
+            Single 툴바의 pToolType을 EnableOrDisable
+            </summary>
+            <param name="pToolType"></param>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarSingleAll(System.Boolean)">
+            <summary>
+            Single 툴바 전체 EnableOrDisable
+            </summary>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarExportPrint(System.Boolean)">
+            <summary>
+            Excel 툴바 EnableOrDisable
+            </summary>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarExportPrint(System.Boolean,System.Boolean)">
+            <summary>
+            Print / Excel 툴바 설정
+            </summary>
+            <param name="enablePrint">Pint 툴바 Enable</param>
+            <param name="enableExcel">Excel 툴바 Enable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarMulti(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitMulti,System.Boolean)">
+            <summary>
+            Multi 툴바의 pToolType을 EnableOrDisable
+            </summary>
+            <param name="pToolType"></param>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarMultiAll(System.Boolean)">
+            <summary>
+            Multi 툴바 전체 EnableOrDisable
+            </summary>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarCommon(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitCommon,System.Boolean)">
+            <summary>
+            Common 툴바의 pToolType을 EnableOrDisable
+            </summary>
+            <param name="pToolType"></param>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetToolBarCommonAll(System.Boolean)">
+            <summary>
+            Common 툴바 전체 EnableOrDisable
+            </summary>
+            <param name="pEnableOrDisable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetToolbarState(System.String)">
+            <summary>
+            툴바 버튼 중 'toolName'에 해당하는 툴바 버튼의 Enable 상태
+            </summary>
+            <param name="toolName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ChangeTabs2(Bizentro.AppFramework.UI.Variables.enumDef.TABPosition)">
+            <summary>
+            pTABPosition에 해당하는 Tab으로 포커스 이동
+            </summary>
+            <param name="pTABPosition"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.FilterVariable(System.Object,System.String,Bizentro.AppFramework.UI.Variables.enumDef.FilterVarType,System.Boolean)">
+            <summary>
+            데이타가 널일 경우 기본값 대입, 유니코드(N)자동삽입
+            </summary>
+            <param name="pValue"></param>
+            <param name="pAlternativeValue"></param>
+            <param name="pFilterVarType"></param>
+            <param name="pTrimOrNot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.FilterVariable(Bizentro.AppFramework.UI.Controls.uniOpenPopup,System.String,Bizentro.AppFramework.UI.Variables.enumDef.FilterVarType,System.Boolean,System.String,System.String)">
+            <summary>
+            OpenPopup 컨트롤 멀티 조건일 경우 사용하는 함수
+            </summary>
+            <param name="ctrl">팝업 컨트롤</param>
+            <param name="pAlternativeValue"></param>
+            <param name="pFilterVarType"></param>
+            <param name="pTrimOrNot"></param>
+            <param name="code">SQL 조건컬럼</param>
+            <param name="condition">조건유형(like 등)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.FilterVariable(Bizentro.AppFramework.UI.Controls.uniOpenPopup,System.String,Bizentro.AppFramework.UI.Variables.enumDef.FilterVarType,System.Boolean,System.String,System.String,System.String,System.String)">
+            <summary>
+            OpenPopup 컨트롤 멀티 조건일 경우 사용하는 함수
+            </summary>
+            <param name="ctrl">팝업 컨트롤</param>
+            <param name="pAlternativeValue"></param>
+            <param name="pFilterVarType"></param>
+            <param name="pTrimOrNot"></param>
+            <param name="code">SQL 조건컬럼</param>
+            <param name="condition">조건유형(like 등)</param>
+            <param name="columnId">멀티팝업 리턴 데이타테이블의 컬럼</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CheckRequiredFields(Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+            해당 패널안에 있는 컨트롤들의 필수 입력 값 체크
+            </summary>
+            <param name="pPanelType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CheckRequiredField(System.Windows.Forms.Control,Bizentro.AppFramework.UI.Variables.enumDef.PanelType)">
+            <summary>
+            해당 컨트롤의 필수 입력 값 체크
+            </summary>
+            <param name="pControl"></param>
+            <param name="pPanelType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CheckFieldLength(Bizentro.AppFramework.UI.Controls.uniTextBox,Bizentro.AppFramework.UI.Variables.enumDef.TABPosition)">
+            <summary>
+            Check Data Max Length 
+            </summary>
+            <param name="pControl">uniTextBox</param>
+            <param name="pTabPosition">enumDef.TABPosition</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CheckFieldLength(Bizentro.AppFramework.UI.Controls.uniRichTextBox,Bizentro.AppFramework.UI.Variables.enumDef.TABPosition)">
+            <summary>
+            Check Data Max Length 
+            </summary>
+            <param name="pControl">uniRichTextBox</param>
+            <param name="pTabPosition">enumDef.TABPosition</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.DisableAllButton(System.Boolean)">
+            <summary>
+            uniButton 전체를 EnableOrDisable
+            </summary>
+            <param name="pEnableOrDisable"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.DisableButton(Bizentro.AppFramework.UI.Controls.uniButton,System.Boolean)">
+            <summary>
+            uniButton을 EnableOrDisable
+            </summary>
+            <param name="pControl"></param>
+            <param name="pEnableOrDisable"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetViewType(Bizentro.AppFramework.UI.Variables.enumDef.ViewType)">
+            <summary>
+            View Type 지정
+            </summary>
+            <param name="vType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.AddViewType(Bizentro.AppFramework.UI.Variables.enumDef.ViewType)">
+            <summary>
+            View Type 추가
+            </summary>
+            <param name="vType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.RemoveViewType(Bizentro.AppFramework.UI.Variables.enumDef.ViewType)">
+            <summary>
+            View Type 삭제
+            </summary>
+            <param name="vType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetViewType">
+            <summary>
+            GetViewType
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ParticipateInViewType(Bizentro.AppFramework.UI.Variables.enumDef.ViewType)">
+            <summary>
+            비교 ViewType이 맞는지
+            </summary>
+            <param name="vType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.LoadInfTB19029(Bizentro.AppFramework.UI.Variables.enumDef.FormType,Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation)">
+            <summary>
+            Form 타입 및 ModuleInfo를 지정(
+            </summary>
+            <param name="pFormType">저장(Input), 조회(Query)</param>
+            <param name="pModuleInformation">저장시에는 Common을 그 외는 해당 ModuleInfo</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ConvertFormType(Bizentro.AppFramework.UI.Variables.enumDef.FormType)">
+            <summary>
+            FormType String
+            </summary>
+            <param name="pFormType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.ConvertModuleCode(Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation)">
+            <summary>
+            Module Info String
+            </summary>
+            <param name="pModuleInformation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetUserDefinedFormat(Bizentro.AppFramework.UI.Module.TB19029Base)">
+            <summary>
+            User Defined Format 적용
+            </summary>
+            <param name="acceptTB19029"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.SetMaskInputFormat(Bizentro.AppFramework.UI.Module.TB19029)">
+            <summary>
+            SetMaskInputFormat
+            </summary>
+            <param name="inputFormaTB19029"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetProgramNM">
+            <summary>
+            프로그램명
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetSimpleProgramNM">
+            <summary>
+            프로그램명(상위 폴더 명칭 제외)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetBaseDirectory">
+            <summary>
+            프로그램의 실행 디렉토리
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetProgramID(System.Boolean)">
+            <summary>
+            프로그램ID
+            </summary>
+            <param name="pFullMenuIdOrNot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.VisibleUnVisibleTableLayout(Bizentro.AppFramework.UI.Controls.uniTableLayoutPanel,System.Int32,System.Boolean)">
+            <summary>
+            Visible / UnVisible TableLayout
+            </summary>
+            <param name="tbWhich"></param>
+            <param name="rowIndex"></param>
+            <param name="Visible"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CheckSingleDirty">
+            <summary>
+            싱글 컨트롤의 값 변경 여부
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.GetRandomID(System.Int32)">
+            <summary>
+            난수 반환
+            </summary>
+            <param name="randomIDLength">난수 자릿수</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.EvalJScript(System.String)">
+            <summary>
+            JavaScript의 eval 메서드를 사용하기 위해 추가 2016-01-06
+            </summary>
+            <param name="JScript"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.CompressDataSetToString(System.Data.DataSet)">
+            <summary>
+            DataSet을 String 형식으로 압축.
+            </summary>
+            <param name="ds">압출할 DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UCommonClass.DecompressStringToDataSet(System.String)">
+            <summary>
+            압축 되어 있는 string 형식을 DataSet으로 압축을 푼다.
+            </summary>
+            <param name="strCompressDs">압축 된 String DataSet</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UConfigClass.GetSetupMod(System.String)">
+            <summary>
+             must change pModuleCode string to enum
+            </summary>
+            <param name="pModuleCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.SetWorkingDataSet(System.Data.DataSet)">
+            <summary>
+            ViewBase에 WorkingDataSet을 부여
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ComboMajorAdd(System.String,System.String)">
+            <summary>
+            싱글 영역에서 사용합니다.
+            </summary>
+            <param name="columnName">싱글 콤보 개체명</param>
+            <param name="MajorCd"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.AddSingleTableOneRow">
+            <summary>
+            싱글 DataTable에 One Row 추가
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ClearSingleTableRows">
+            <summary>
+            싱글 DataTable을 클리어
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.GetMoveToNextDataSet">
+            <summary>
+            GetMoveToNextDataSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.GetMoveToPrevDataSet">
+            <summary>
+            GetMoveToPrevDataSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ComboMajorAdd(System.String,System.String,System.String)">
+            <summary>
+            Module View 의 소스에서 콤보를 할당해야 할 경우 넣는곳
+            </summary>
+            <param name="columnName">MSG_TYPE</param>
+            <param name="MajorCd"></param>
+            <param name="Where"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ComboCustomAdd(System.String,System.String,System.String,System.String)">
+            <summary>
+            유저 콤보 
+            </summary>
+            <param name="columnName"></param>
+            <param name="Select"></param>
+            <param name="From"></param>
+            <param name="Where"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataSet(System.Data.DataSet,System.ComponentModel.IListSource)">
+            <summary>
+            destDs DataSet에 sourceDs DataSet의 데이터를 Merge.
+            </summary>
+            <param name="destDs">데이터를 넣을 대상</param>
+            <param name="sourceDs">데이터를 가져올 대상</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataSet(System.Data.DataSet,System.ComponentModel.IListSource,System.Boolean)">
+            <summary>
+            destDs DataSet에 sourceDs DataSet의 데이터를 Merge.
+            </summary>
+            <param name="destDs">데이터를 넣을 대상</param>
+            <param name="sourceDs">데이터를 가져올 대상</param>
+            <param name="preserveChanges"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataSet(System.Data.DataSet,System.ComponentModel.IListSource,System.Boolean,System.Data.MissingSchemaAction)">
+            <summary>
+            destDs DataSet에 sourceDs DataSet의 데이터를 Merge.
+            </summary>
+            <param name="destDs">데이터를 넣을 대상</param>
+            <param name="sourceDs">데이터를 가져올 대상</param>
+            <param name="preserveChanges"></param>
+            <param name="missingSchemaAction"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataTable(System.Data.DataTable,System.Data.DataTable)">
+            <summary>
+            destDt DataTable에 sourceDt DataTable의 데이터를 Merge.
+            </summary>
+            <param name="destDt">데이터를 넣을 대상</param>
+            <param name="sourceDt">데이터를 가져올 대상</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataTable(System.Data.DataTable,System.Data.DataTable,System.Boolean,System.Data.MissingSchemaAction)">
+            <summary>
+            destDt DataTable에 sourceDt DataTable의 데이터를 Merge.
+            </summary>
+            <param name="destDt">데이터를 넣을 대상</param>
+            <param name="sourceDt">데이터를 가져올 대상</param>
+            <param name="preserveChanges"></param>
+            <param name="missingSchemaAction"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.MergeDataTable(System.Data.DataTable,System.Data.DataTable,System.Boolean,System.Data.MissingSchemaAction,System.Boolean)">
+            <summary>
+            destDt DataTable에 sourceDt DataTable의 데이터를 Merge.
+            </summary>
+            <param name="destDt">데이터를 넣을 대상</param>
+            <param name="sourceDt">데이터를 가져올 대상</param>
+            <param name="preserveChanges"></param>
+            <param name="missingSchemaAction">MissingSchemaAction</param>
+            <param name="doAcceptChanges">DataTable AcceptChanges() 메소드를 호출할지 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.Data.DataTable,System.String)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤 명</param>
+            <param name="dt">데이타 테이블 명</param>
+            <param name="dataMember">테이블명.컬럼명</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤 명</param>
+            <param name="dt">데이타 테이블 명</param>
+            <param name="dataMember">테이블명.컬럼명</param>
+            <param name="DetailTable">Detail Table 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.Data.DataColumn)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤 명</param>
+            <param name="dataColumn">테이블 컬럼명</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.Data.DataColumn,System.Boolean)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤 명</param>
+            <param name="dataColumn">테이블 컬럼명</param>
+            <param name="DetailTable">Detail Table 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.String,System.Data.DataColumn)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤</param>
+            <param name="propertyName">속성 명</param>
+            <param name="dataColumn"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.String,System.Data.DataTable,System.String)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤</param>
+            <param name="propertyName">속성 명</param>
+            <param name="dt">데이타 테이블 명</param>
+            <param name="dataMember">테이블명.컬럼명</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.addDataBinding(System.Windows.Forms.Control,System.String,System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            싱글 컨트롤의 데이타 바인딩을 정의 합니다.
+            </summary>
+            <param name="control">컨트롤</param>
+            <param name="propertyName">속성 명</param>
+            <param name="dt">데이타 테이블 명</param>
+            <param name="dataMember">테이블명.컬럼명</param>
+            <param name="DetailTable">Detail Table 여부</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.SyncSingleDataSource">
+            <summary>
+            SyncSingleDataSource
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DateToYYYYMMDD(System.Object,System.Windows.Forms.ConvertEventArgs)">
+            <summary>
+             데이타셋의 날짜데이타를 YYYYMMDD형태(DB)의 문자로 리턴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DateToYYYYMM(System.Object,System.Windows.Forms.ConvertEventArgs)">
+            <summary>
+            데이타셋의 날짜데이타를 YYYYMM형태(DB)의 문자로 리턴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DateToYYYY(System.Object,System.Windows.Forms.ConvertEventArgs)">
+            <summary>
+            데이타셋의 날짜데이타를 YYYY형태의 문자로 리턴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.YYYYMMDDToDate(System.Object,System.Windows.Forms.ConvertEventArgs)">
+            <summary>
+            YYYYMMDD(DB)형태의 스트링을 날짜개체로 리턴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.YYYYMMToDate(System.Object,System.Windows.Forms.ConvertEventArgs)">
+            <summary>
+            YYYYMM(DB)형태의 스트링을 날짜개체로 리턴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DataSetTrim(System.Data.DataSet)">
+            <summary>
+            Trim DataSet,DataTable
+            add by cuihulong
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DataTableTrim(System.Data.DataTable)">
+            <summary>
+            데이터 테이블안의 데이터 전부를 Trim()
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.GetDataChange(System.Data.DataTable,System.String,Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes)">
+            <summary>
+            해당 데이터 테이블의 FlagColumnName에 DataChangeTypes에 해당하는 정보 만 가져옴
+            </summary>
+            <param name="dt">Data Table</param>
+            <param name="flagColumnName">Flag Column Name</param>
+            <param name="changeType">Data Change Types</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.GetDataChange(System.Data.DataTable,System.String)">
+            <summary>
+            해당 데이터 테이블의 FlagColumnName에 'C/U/D' 값이 들어가있는 정보 만 가져옴
+            </summary>
+            <param name="dt">Data Table</param>
+            <param name="flagColumnName">Flag Column Name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DynamicCombo(Bizentro.AppFramework.UI.Controls.uniCombo,System.String)">
+            <summary>
+            Combo의 드릴 다운 데이터들을 변경
+            </summary>
+            <param name="comboControl"></param>
+            <param name="SQL"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.DynamicCombo(Bizentro.AppFramework.UI.Controls.uniCombo,System.String,System.String,System.String)">
+            <summary>
+            Combo의 드릴 다운 데이터들을 변경
+            </summary>
+            <param name="comboControl"></param>
+            <param name="Select"></param>
+            <param name="From"></param>
+            <param name="Where"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ApplyDDToDynamicGrid(System.Windows.Forms.Control)">
+            <summary>
+            다이나믹 그리드 DD 적용
+            </summary>
+            <param name="grid">컨트롤 ID</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ApplyDDToDynamicGrid(System.Windows.Forms.Control,System.Int32)">
+            <summary>
+            다이나믹 그리드 DD 적용
+            </summary>
+            <param name="grid"></param>
+            <param name="StartIndex"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ApplyDDToDynamicSpreadSheet(System.Windows.Forms.Control)">
+            <summary>
+            다이나믹 SpreadSheet DD 적용
+            </summary>
+            <param name="grid">컨트롤 ID</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataClass.ChangeSingleCurrency">
+            <summary>
+            Single Control 중에 Nemeric Format에 정의된 Control 들에 대해 포맷을 적용
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes.All">
+            <summary>
+            CUD 전체
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes.C">
+            <summary>
+            Insert
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes.U">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.UDataClass.DataChangeTypes.D">
+            <summary>
+            Delete
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataAccessClass.CommonQueryRs(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSelect"></param>
+            <param name="pFrom"></param>
+            <param name="pWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDataAccessClass.CommonQuerySQL(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pStrSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.GetSqlStringCommand(System.String)">
+            <summary>
+            <para>Creates a <see cref="T:System.Data.Common.DbCommand"/> for a SQL query.</para>
+            </summary>
+            <param name="query"><para>The text of the query.</para></param>        
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the SQL query.</para></returns>        
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ImageToByteArr(System.Object)">
+            <summary>
+            Image perproty of uniPictureBox convert to byte array.
+            </summary>
+            <param name="oImage">image</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            Adds a new In <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>
+            <param name="size"><para>The maximum size of the data within the column.</para></param>
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>
+            <param name="nullable"><para>Avalue indicating whether the parameter accepts <see langword="null"/> (<b>Nothing</b> in Visual Basic) values.</para></param>
+            <param name="precision"><para>The maximum number of digits used to represent the <paramref name="value"/>.</para></param>
+            <param name="scale"><para>The number of decimal places to which <paramref name="value"/> is resolved.</para></param>
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>       
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType,System.Data.ParameterDirection,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            <para>Adds a new instance of a <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the command.</para>
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>        
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>                
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>    
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddOutParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType,System.Int32)">
+            <summary>
+            Adds a new Out <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the out parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>        
+            <param name="size"><para>The maximum size of the data within the column.</para></param>        
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddInParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType)">
+            <summary>
+            Adds a new In <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the in parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <remarks>
+            <para>This version of the method is used when you can have the same parameter object multiple times with different values.</para>
+            </remarks>        
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddInParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType,System.Object)">
+            <summary>
+            Adds a new In <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The commmand to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <param name="value"><para>The value of the parameter.</para></param>      
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.AddInParameter(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Data.SqlDbType,System.String,System.Data.DataRowVersion)">
+            <summary>
+            Adds a new In <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object to the given <paramref name="command"/>.
+            </summary>
+            <param name="command">The command to add the parameter.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>                
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the value.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.SetParameterValue(Bizentro.AppFramework.DataBridge.uniCommand,System.String,System.Object)">
+            <summary>
+            Sets a parameter value.
+            </summary>
+            <param name="command">The command with the parameter.</param>
+            <param name="parameterName">The parameter name.</param>
+            <param name="value">The parameter value.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.GetParameterValue(Bizentro.AppFramework.DataBridge.uniCommand,System.String)">
+            <summary>
+            Gets a parameter value.
+            </summary>
+            <param name="command">The command that contains the parameter.</param>
+            <param name="name">The name of the parameter.</param>
+            <returns>The value of the parameter.</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.BuildParameterName(System.String)">
+            <summary>
+            Builds a value parameter name for the current database.
+            </summary>
+            <param name="name">The name of the parameter.</param>
+            <returns>A correctly formated parameter name.</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ExecuteNonQuery(Bizentro.AppFramework.DataBridge.uniCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns the number of rows affected.</para>
+            </summary>
+            <param name="command">
+            <para>The command that contains the query to execute.</para>
+            </param>       
+            <seealso cref="M:System.Data.IDbCommand.ExecuteScalar"/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.GetOpenConnection">
+            <summary>
+            	Get's a "wrapped" connection that will be not be disposed if a transaction is
+            	active (created by creating a <see cref="!:TransactionScope"/> instance). The
+            	connection will be disposed when no transaction is active.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.PrepareCommand(Bizentro.AppFramework.DataBridge.uniCommand,Bizentro.AppFramework.DataBridge.uniConnection)">
+            <summary>
+            <para>Assigns a <paramref name="connection"/> to the <paramref name="command"/> and discovers parameters if needed.</para>
+            </summary>
+            <param name="command"><para>The command that contains the query to prepare.</para></param>
+            <param name="connection">The connection to assign to the command.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.PrepareCommand(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Assigns a <paramref name="transaction"/> to the <paramref name="command"/> and discovers parameters if needed.</para>
+            </summary>
+            <param name="command"><para>The command that contains the query to prepare.</para></param>
+            <param name="transaction">The transaction to assign to the command.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.CreateParameter(System.String,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            <para>Adds a new instance of a <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object.</para>
+            </summary>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>
+            <param name="size"><para>The maximum size of the data within the column.</para></param>
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>
+            <param name="nullable"><para>Avalue indicating whether the parameter accepts <see langword="null"/> (<b>Nothing</b> in Visual Basic) values.</para></param>
+            <param name="precision"><para>The maximum number of digits used to represent the <paramref name="value"/>.</para></param>
+            <param name="scale"><para>The number of decimal places to which <paramref name="value"/> is resolved.</para></param>
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>  
+            <returns>A newly created <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> fully initialized with given parameters.</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.CreateParameter(System.String)">
+            <summary>
+            <para>Adds a new instance of a <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> object.</para>
+            </summary>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <returns><para>An unconfigured parameter.</para></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.UserParametersStartIndex">
+            <summary>
+            Returns the starting index for parameters in a command.
+            </summary>
+            <returns>The starting index for parameters in a command.</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ConfigureParameter(Bizentro.AppFramework.DataBridge.uniParameter,System.String,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)">
+            <summary>
+            Configures a given <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/>.
+            </summary>
+            <param name="param">The <see cref="T:Bizentro.AppFramework.DataBridge.uniParameter"/> to configure.</param>
+            <param name="name"><para>The name of the parameter.</para></param>
+            <param name="dbType"><para>One of the <see cref="T:System.Data.DbType"/> values.</para></param>
+            <param name="size"><para>The maximum size of the data within the column.</para></param>
+            <param name="direction"><para>One of the <see cref="T:System.Data.ParameterDirection"/> values.</para></param>
+            <param name="nullable"><para>Avalue indicating whether the parameter accepts <see langword="null"/> (<b>Nothing</b> in Visual Basic) values.</para></param>
+            <param name="precision"><para>The maximum number of digits used to represent the <paramref name="value"/>.</para></param>
+            <param name="scale"><para>The number of decimal places to which <paramref name="value"/> is resolved.</para></param>
+            <param name="sourceColumn"><para>The name of the source column mapped to the DataSet and used for loading or returning the <paramref name="value"/>.</para></param>
+            <param name="sourceVersion"><para>One of the <see cref="T:System.Data.DataRowVersion"/> values.</para></param>
+            <param name="value"><para>The value of the parameter.</para></param>  
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.GetDataAdapter(Bizentro.AppFramework.DataBridge.UpdateBehavior)">
+            <summary>
+            Gets the DbDataAdapter with the given update behavior and connection from the proper derived class.
+            </summary>
+            <param name="updateBehavior">
+            <para>One of the <see cref="T:Bizentro.AppFramework.DataBridge.UpdateBehavior"/> values.</para>
+            </param>        
+            <returns>A <see cref="T:System.Data.Common.DbDataAdapter"/>.</returns>
+            <seealso cref="T:System.Data.Common.DbDataAdapter"/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.SetUpRowUpdatedEvent(Bizentro.AppFramework.DataBridge.uniDataAdapter)">
+            <summary>
+            Sets the RowUpdated event for the data adapter.
+            </summary>
+            <param name="adapter">The <see cref="T:System.Data.Common.DbDataAdapter"/> to set the event.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.DoExecuteNonQuery(Bizentro.AppFramework.DataBridge.uniCommand,System.Boolean)">
+            <summary>
+            Executes the query for <paramref name="command"/>.
+            </summary>
+            <param name="command">The <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> representing the query to execute.</param>
+            <returns>The quantity of rows affected.</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.DataSet,System.String)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and adds a new <see cref="T:System.Data.DataTable"></see> to the existing <see cref="T:System.Data.DataSet"></see>.</para>
+            </summary>
+            <param name="command">
+            <para>The <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to load.</para>
+            </param>
+            <param name="tableName">
+            <para>The name for the new <see cref="T:System.Data.DataTable"/> to add to the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>        
+            <exception cref="T:System.ArgumentNullException">Any input parameter was <see langword="null"/> (<b>Nothing</b> in Visual Basic)</exception>
+            <exception cref="T:System.ArgumentException">tableName was an empty string</exception>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.DataSet,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> within the given <paramref name="transaction"/> and adds a new <see cref="T:System.Data.DataTable"></see> to the existing <see cref="T:System.Data.DataSet"></see>.</para>
+            </summary>
+            <param name="command">
+            <para>The <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to load.</para>
+            </param>
+            <param name="tableName">
+            <para>The name for the new <see cref="T:System.Data.DataTable"/> to add to the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>        
+            <exception cref="T:System.ArgumentNullException">Any input parameter was <see langword="null"/> (<b>Nothing</b> in Visual Basic).</exception>
+            <exception cref="T:System.ArgumentException">tableName was an empty string.</exception>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from a <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/>.</para>
+            </summary>
+            <param name="command">
+            <para>The command to execute to fill the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.DataSet,System.String[],System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from a <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> in  a transaction.</para>
+            </summary>
+            <param name="command">
+            <para>The command to execute to fill the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command in.</para>
+            </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(System.Data.Common.DbTransaction,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> with the results returned from a stored procedure executed in a transaction.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the stored procedure in.</para>
+            </param>
+            <param name="storedProcedureName">
+            <para>The stored procedure name to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+            <param name="parameterValues">
+            <para>An array of paramters to pass to the stored procedure. The parameter values must be in call order as they appear in the stored procedure.</para>
+            </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from command text.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.LoadDataSet(System.Data.Common.DbTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            <para>Loads a <see cref="T:System.Data.DataSet"/> from command text in a transaction.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command in.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <param name="dataSet">
+            <para>The <see cref="T:System.Data.DataSet"/> to fill.</para>
+            </param>
+            <param name="tableNames">
+            <para>An array of table name mappings for the <see cref="T:System.Data.DataSet"/>.</para>
+            </param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ExecuteDataSet(Bizentro.AppFramework.DataBridge.uniCommand)">
+            <summary>
+            <para>Executes the <paramref name="command"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="command"><para>The <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> to execute.</para></param>
+            <returns>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="command"/>.</returns>        
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ExecuteDataSet(Bizentro.AppFramework.DataBridge.uniCommand,System.Data.Common.DbTransaction)">
+            <summary>
+            <para>Executes the <paramref name="command"/> as part of the <paramref name="transaction"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="command"><para>The <see cref="T:Bizentro.AppFramework.DataBridge.uniCommand"/> to execute.</para></param>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <returns>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="command"/>.</returns>        
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ExecuteDataSet(System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> interpreted as specified by the <paramref name="commandType"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="commandText"/>.</para>
+            </returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDatabaseClass.ExecuteDataSet(System.Data.Common.DbTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            <para>Executes the <paramref name="commandText"/> as part of the given <paramref name="transaction"/> and returns the results in a new <see cref="T:System.Data.DataSet"/>.</para>
+            </summary>
+            <param name="transaction">
+            <para>The <see cref="T:System.Data.IDbTransaction"/> to execute the command within.</para>
+            </param>
+            <param name="commandType">
+            <para>One of the <see cref="T:System.Data.CommandType"/> values.</para>
+            </param>
+            <param name="commandText">
+            <para>The command text to execute.</para>
+            </param>
+            <returns>
+            <para>A <see cref="T:System.Data.DataSet"/> with the results of the <paramref name="commandText"/>.</para>
+            </returns>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.UDatabaseClass.ParameterToken">
+            <summary>
+            <para>Gets the parameter token used to delimit parameters for the SQL Server database.</para>
+            </summary>
+            <value>
+            <para>The '@' symbol.</para>
+            </value>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.StringToDateTime(System.String,System.String)">
+            <summary>
+            FormatString 형식의 날짜 문자열 값을 DateTime으로 변환하여 반환
+            년(yy or yyyy) 월(MM) 일(dd)을 모두 입력하지 않을 시에 에러 발생
+            ※ 날짜 구분자는 [.][/][-] 3가지만 인식, 시분초 미지원
+            </summary>
+            <param name="pDate">날짜 문자열 값(ex:1999-12-31)</param>
+            <param name="pFormatString">날짜 문자열 형식(ex:yyyy-MM-dd)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.StringToDateTime(System.DateTime,System.String,System.String)">
+            <summary>
+            FormatString 형식의 날짜 문자열 값을 DateTime으로 변환하여 반환
+            년(yy or yyyy) 월(MM) 일(dd)을 모두 입력하지 않을 시에 에러 발생
+            ※ 날짜 구분자는 [.][/][-] 3가지만 인식, 시분초 미지원
+            </summary>
+            <param name="nowDate">현재 날짜(날짜 기준으로 년도가 2자리 일 경우 100단위를 구분)</param>
+            <param name="pDate">날짜 문자열 값(ex:1999-12-31)</param>
+            <param name="pFormatString">날짜 문자열 형식(ex:yyyy-MM-dd)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.StringDateConvertFormat(System.String,System.String,System.String)">
+            <summary>
+            날짜 문자열 값을 From 에서 To FormatString으로 변환하여 반환
+            년(yy or yyyy) 월(MM) 일(dd)을 모두 입력하지 않을 시에 에러 발생
+            ※ 날짜 구분자는 [.][/][-] 3가지만 인식, 시분초 미지원
+            </summary>
+            <param name="pDate">날짜 문자열 값(ex:1999-12-31)</param>
+            <param name="pFromFormatString">현재 날짜 문자열 형식(ex:yyyy-MM-dd)</param>
+            <param name="pToFormatString">변환할 날짜 문자열 형식(ex:yyyy/MM/dd)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.StringDateConvertFormat(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            날짜 문자열 값을 From 에서 To FormatString으로 변환하여 반환
+            년(yy or yyyy) 월(MM) 일(dd)을 모두 입력하지 않을 시에 에러 발생
+            ※ 날짜 구분자는 [.][/][-] 3가지만 인식, 시분초 미지원
+            </summary>
+            <param name="pDate">날짜 문자열 값(ex:1999-12-31)</param>
+            <param name="pFromFormatString">현재 날짜 문자열 형식(ex:yyyy-MM-dd)</param>
+            <param name="pToFormatString">변환할 날짜 문자열 형식(ex:yyyy/MM/dd)</param>
+            <param name="pWrappingQuotation">문자열 앞뒤에 Single Quotation(') 입력 여부(DB 입력 문자열 변환 시 사용)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.StringDateConvertFormat(System.DateTime,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            날짜 문자열 값을 From 에서 To FormatString으로 변환하여 반환
+            년(yy or yyyy) 월(MM) 일(dd)을 모두 입력하지 않을 시에 에러 발생
+            ※ 날짜 구분자는 [.][/][-] 3가지만 인식, 시분초 미지원
+            </summary>
+            <param name="nowDate">현재 날짜(날짜 기준으로 년도가 2자리 일 경우 100단위를 구분)</param>
+            <param name="pDate">날짜 문자열 값(ex:1999-12-31)</param>
+            <param name="pFromFormatString">현재 날짜 문자열 형식(ex:yyyy-MM-dd)</param>
+            <param name="pToFormatString">변환할 날짜 문자열 형식(ex:yyyy/MM/dd)</param>
+            <param name="pWrappingQuotation">문자열 앞뒤에 Single Quotation(') 입력 여부(DB 입력 문자열 변환 시 사용)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.GetLastDay(System.DateTime)">
+            <summary>
+            받은 Datetime의 해당월의 마지막 날짜 Return
+            </summary>
+            <param name="pDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.GetFirstDay(System.DateTime)">
+            <summary>
+            받은 DateTime의 해당월의 첫 날짜 Return
+            </summary>
+            <param name="pDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.GetDBServerDateTime">
+            <summary>
+            DB Server 의 오늘 일자 정보 Return(년월일 까지)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UDateClass.GetDBServerDateTimeAndTime">
+            <summary>
+            DB Server 의 오늘 일자 정보 Return(년월일시분초 전체)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UFileClass.ExportToFile(System.String,System.String)">
+            <summary>
+            Export string to text file
+            </summary>
+            <param name="fileName">File name </param>
+            <param name="fileString">text content</param>
+            <returns>true:success false:failed</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.LibInternalClass.RemoveRowNumColumnInternal(System.Data.DataTable)">
+            <summary>
+            서버에서 쿼리한 데이터에 ROW_Num 필드가 포함되어 있다면 그 컬럼을 삭제한다.
+            ROW_Num 필드는 uniGrid에서 자동 증가용 필드로 사용된다.
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.MultiNavigation.IntializeGridLayout">
+            <summary>
+            Multi Navigation Initialize
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.MultiNavigation.ColumnDefine">
+            <summary>
+            데이타 그리드로 컬럼을 정의
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.MultiNavigation.uniGrid1_DoubleClickCell(System.Object,Infragistics.Win.UltraWinGrid.DoubleClickCellEventArgs)">
+            <summary>
+            더블클릭을 하면 닫힌다.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.MultiNavigation.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.MultiNavigation.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.MultiNavigation.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.MultiNavigation.ProgramID">
+            <summary>
+            프로그램ID
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.MultiNavigation.Parameters">
+            <summary>
+            원래 화면으로 전달된 대상화면의 Parameter
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.MultiNavigation.DestParameter">
+            <summary>
+            화면으로 전달될 파라미터
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.Module">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.Module.#ctor(Microsoft.Practices.CompositeUI.WorkItem)">
+            <summary>
+            
+            </summary>
+            <param name="rootWorkItem"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ModuleController.AddServices">
+            <summary>
+             서비스 추가
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ModuleController.ExtendMenu">
+            <summary>
+            메뉴에 추가
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ModuleController.ExtendToolStrip">
+            <summary>
+            툴바에 추가
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ModuleController.AddViews">
+            <summary>
+            WorkSpace에 모듈 추가
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.Mask">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.MaskControl">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.path01">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.Properties.Resources.underline">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.UEasyBaseClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.setPolicy(System.String)">
+            <summary>
+            setPolicy
+            </summary>
+            <returns>strVar</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.GetEBVar">
+            <summary>
+            GetEBVar
+            </summary>
+            <returns>tmpVer</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.PrintEBCDocument(System.String,System.String)">
+            <summary>
+            FncEBCPrint
+            </summary>
+            <param name="EBRName">EBRName</param>
+            <param name="condvar">condvar</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.PrintEBRDocument(System.String,System.String)">
+            <summary>
+            FncEBRPrint
+            </summary>
+            <param name="EBRName">EBRName</param>
+            <param name="condvar">condvar</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.FncEBR5(System.String,System.String,System.String)">
+            <summary>
+            FncEBR5
+            </summary>
+            <param name="EBRName">EasyBaseName</param>
+            <param name="work">Action</param>
+            <param name="condvar">URL</param>
+            <param name="x">x axis</param>
+            <param name="y">y axis</param>
+            <param name="x1">x1 axis</param>
+            <param name="y1">y1 axis</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.GetPath(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            GetPath
+            </summary>
+            <param name="EBRName">EasyBaseName</param>
+            <param name="work">Action</param>
+            <param name="condvar">Url</param>
+            <param name="Policy">Policy</param>
+            <param name="EBRorEBC">EasyBaseType</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.GetConditionValueEncoding(System.String)">
+            <summary>
+            Get 방식의 Web 호출로 인한 파라미터 명은 Encoding 제외 / 파리미터 Value에만 Encoding
+            </summary>
+            <param name="conditionValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.FncEBR5RC(System.String,System.String,System.String,System.String)">
+            <summary>
+            FncEBR5RC
+            </summary>
+            <param name="EBRName">EasyBaseName</param>
+            <param name="work">EasyBase_Action</param>
+            <param name="condvar">URL</param>
+            <param name="EBRorEBC">EasyBaseType</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.PreviewEBCDocument(System.String,System.String)">
+            <summary>
+            FncEBCPreview
+            </summary>
+            <param name="EBCName">EasyBaseName</param>
+            <param name="condvar">URL</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.PreviewEBRDocument(System.String,System.String)">
+            <summary>
+            FncEBRPreview
+            </summary>
+            <param name="EBRName">EasyBaseName</param>
+            <param name="condvar">URL</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.AskEBDocumentName(System.String,System.String)">
+            <summary>
+            Get actual EasyBase Document File Name
+            </summary>
+            <param name="pEbId">EasyBase ID</param>
+            <param name="pType">EasyBase Type</param>
+            <returns>EasyBase Document File Name</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.AskDocumentInfo(System.String)">
+            <summary>
+            Get the Form Size that contains EasyBase Document
+            </summary>
+            <param name="pEbId">EasyBase ID</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.WebBrowserShow(System.String,System.String,System.String)">
+            <summary>
+            Get WebBrowser Form Show
+            </summary>
+            <param name="pAction">Action Type</param>
+            <param name="targetUrl">Url</param>
+            <param name="ozLangCode">Lang Code</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UEasyBaseClass.WebBrowserShow(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get WebBrowser Form Show
+            </summary>
+            <param name="pAction">Action Type</param>
+            <param name="targetUrl">Url</param>
+            <param name="ozLangCode">Lang Code</param>
+            <param name="frmTitle">frmTitle</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UNumberClass.FormatFieldByObjectOfCur(Bizentro.AppFramework.UI.Controls.uniNumeric,System.String,Bizentro.AppFramework.UI.Variables.enumDef.NumericType)">
+            <summary>
+            숫자형 싱글 컨트롤의 포맷을 통화에 맞춰서 변하게 한다.
+            </summary>
+            <param name="control"></param>
+            <param name="DocumentCurrency"></param>
+            <param name="pType"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UNumberClass.FormatNumberByTax(System.Double,System.String,Bizentro.AppFramework.UI.Variables.enumDef.NumericType)">
+            <summary>
+            
+            </summary>
+            <param name="pNum"></param>
+            <param name="pCurrency"></param>
+            <param name="NumberType"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UNumberClass.DateDiff(Bizentro.AppFramework.UI.Variables.enumDef.DateInterval,System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="interval"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UStringClass.CompareUNITextBoxCode(Bizentro.AppFramework.UI.Controls.uniTextBox,Bizentro.AppFramework.UI.Controls.uniTextBox)">
+            <summary>
+            From~To TextBox의 문자열 비교
+            </summary>
+            <param name="uniTextBoxFrom"></param>
+            <param name="uniTextBoxTo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UStringClass.CompareUNITextBoxCode(Bizentro.AppFramework.UI.Controls.uniTextBox,Bizentro.AppFramework.UI.Controls.uniTextBox,System.String)">
+            <summary>
+            From~To TextBox의 문자열 비교
+            </summary>
+            <param name="uniTextBoxFrom"></param>
+            <param name="uniTextBoxTo"></param>
+            <param name="pMessageCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UStringClass.CompareUNIOpenPopupCode(Bizentro.AppFramework.UI.Controls.uniOpenPopup,Bizentro.AppFramework.UI.Controls.uniOpenPopup)">
+            <summary>
+            From~To OpenPopup CodeValue의 문자열 비교
+            </summary>
+            <param name="pFromuniOpenPopup"></param>
+            <param name="pTouniOpenPopup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UStringClass.GetLargestStringValue(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="ptotalWidth"></param>
+            <param name="pWrappingQuotation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UStringClass.CompareCharacterLength(System.String,System.Int32)">
+            <summary>
+            Ascii Code Compare with Multibyte Language
+            </summary>
+            <param name="szAllText"></param>
+            <param name="strLen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetSQLSelectList(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo)">
+            <summary>
+            ZAdoGridNo에 설정된 Select 구문 가져오기
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetSQLGroupOrderByList(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo)">
+            <summary>
+            ZAdoGridNo에 설정된 Select Order Group 구문 가져오기
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.InitialZAdoGrid(System.String,Bizentro.AppFramework.UI.Variables.enumDef.ZAdoOrderByOrGroupByType,Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo,Bizentro.AppFramework.UI.Controls.uniGrid)">
+            <summary>
+            Z_ADO_FIELD_INF_NET 테이블에 설정된 모양으로 그리드 그리기
+            </summary>
+            <param name="id">Z_ADO_FIELD_INF_NET의 PGM_ID 값</param>
+            <param name="pZAdoOrderByOrGroupByType">Order by, Group by 여부</param>
+            <param name="pZAdoGridNo">Grid Initial</param>
+            <param name="grid"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetKeyPosition(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo,System.Int32)">
+            <summary>
+             Get Column position
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <param name="pKeyTagValue"></param>
+            <returns>return column position </returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetKeyPositionColumnName(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo,System.Int32)">
+            <summary>
+            Get Column Name
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <param name="pKeyTagValue"></param>
+            <returns>return column name</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetKeyPositionValue(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo,System.String)">
+            <summary>
+            GetKeyPositionValue  by ActiveRow
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <param name="ColumnName"></param>
+            <returns>return column name</returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.UZAdoClass.GetKeyPositionValue(Bizentro.AppFramework.UI.Variables.enumDef.ZAdoGridNo,System.String,System.Int32)">
+            <summary>
+            GetKeyPositionValue By Row
+            </summary>
+            <param name="pZAdoGridNo"></param>
+            <param name="ColumnName"></param>
+            <param name="RowIndex"></param>
+            <returns>return column name</returns>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.DataToMove">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.MoveQuery">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.Command">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.OperationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.BindingTables">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.ResultDataSet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Module.DataToMove.Continue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.FloatingWindowEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.FloatingWindowEventArgs.PopupFullID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.FloatingWindowEventArgs.ResultData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.uniFileDragDropManager">
+            <summary>
+            Drag And Drop 을 위한 Class
+            >> 1. Drag And Drop을 사용할 컨트롤(uniControlName)에 DragDrop 활성화(Control의 AllowDrop = false 로 되어 있어야함)
+            >> uniFileDragDropManager.Instance.EnableDragDrop(this.uniControlName.Handle);
+            >> 2. 해당 컨트롤에 Event 추가
+            >> uniFileDragDropManager.Instance.uniDragDrop += new EventHandler[uniDragDropArgs](uniControlName_uniDragDrop);
+            >> 3. Event 처리 방법
+            >> private void uniControlName_uniDragDrop(Object sender, uniDragDropArgs e)
+            {
+                if (e.HWnd == this.uniControlName.Handle)
+                {
+                    e.FileList
+                }
+            }
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Module.ViewBasePresenter">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.OnViewReady">
+            <summary>
+            This method is a placeholder that will be called by the view when it's been loaded <see cref="!:System.Winforms.Control.OnLoad"/>
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.OnCloseView">
+            <summary>
+            Close the view
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.MainToolStripMenuClick(System.Object,Infragistics.Win.UltraWinToolbars.ToolClickEventArgs)">
+            <summary>
+            이벤트 수신자 선언
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.GetLoadTree(System.String)">
+            <summary>
+            해당 프로그램ID의 TreeNode
+            </summary>
+            <param name="ProgramID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.GetTreeFullPath(Infragistics.Win.UltraWinTree.UltraTreeNode)">
+            <summary>
+            GetTreeFullPath
+            </summary>
+            <param name="crl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.GetLoadTool(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ProgramID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetActivateView(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Other View Call
+            </summary>
+            <param name="ProgramID"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.GetViewSmartPartInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.IsExistSmartPart(System.String)">
+            <summary>
+            View Exist Check Logics 
+            </summary>
+            <param name="SmartPartName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetToolBar(Bizentro.AppFramework.UI.Common.UniToolbarVisableType,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="Toolbars"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetSingleToolBar(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitSingle,System.Boolean)">
+            <summary>
+            Single 툴바 설정
+            </summary>
+            <param name="toolType"></param>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetMultiToolBar(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitMulti,System.Boolean)">
+            <summary>
+            Multi 툴바 설정
+            </summary>
+            <param name="toolType"></param>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetCommonToolBar(Bizentro.AppFramework.UI.Variables.enumDef.ToolBitCommon,System.Boolean)">
+            <summary>
+            Common 툴바 설정
+            </summary>
+            <param name="toolType"></param>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetExportPrintToolBar(System.Boolean)">
+            <summary>
+            Print / Excel 툴바 설정
+            </summary>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetExportPrintToolBar(System.Boolean,System.Boolean)">
+            <summary>
+            Print / Excel 툴바 설정
+            </summary>
+            <param name="enablePrint">Pint 툴바 Enable</param>
+            <param name="enableExcel">Excel 툴바 Enable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.SetToolToolBar">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.GetToolbarState(System.String)">
+            <summary>
+            툴바 상태
+            </summary>
+            <param name="toolName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.ToolbarManagerEnabledChange(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 하위 툴 일괄 처리 
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="SetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.ToolbarManagerToolVisibleChange(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 하위 툴 일괄 처리 
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="SetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.ToolbarManagerVisibleChange(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String,System.Boolean)">
+            <summary>
+            대상키 검색 후 검색 대상 처리
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <param name="SetValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Module.ViewBasePresenter.ToolbarManagerRemove(Infragistics.Win.UltraWinToolbars.UltraToolbarsManager,System.String)">
+            <summary>
+            대상키 검색 후 검색 대상 삭제
+            </summary>
+            <param name="toolMag"></param>
+            <param name="_key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Module.ViewBasePresenter.DrillDownService">
+            <summary>
+            [ServiceDependency]로 선언만 하면 자동으로 개체가 생성 된다.
+            CAB의 개념임.
+            </summary>
+        </member>
+    </members>
+</doc>

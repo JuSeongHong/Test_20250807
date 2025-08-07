@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.DataBridge</name>
+    </assembly>
+    <members>
+        <member name="M:Bizentro.AppFramework.DataBridge.SqlServer.SqlConditionalCommand.DoCommand">
+            <summary>
+            먼저 유효성 검사를 수행하고
+            유효하다면 명령을 실행한다.
+            </summary>
+            <returns>명령이 성공적으로 수행됬는지 여부</returns>
+        </member>
+        <member name="F:Bizentro.AppFramework.DataBridge.uniConditionalCommand._sourceDataRow">
+            <summary>
+            이 속성은 서버에서만 사용한다.
+            이 속성 값이 설정될때마다 데이터 행의 값이 이 개체 전채에 반영된다.
+            SqlConditionalCommand 에서는 이 개체에서 생성된 정보를 복사해서 사용한다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniConditionalCommandAdapter.ExchangeDT(System.Data.DataTable)">
+            <summary>
+            DataTable change
+            add by cuihulong
+            </summary>
+            <param name="edt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetStoredProcCommand(System.String)">
+            <summary>
+            <para>Creates a <see cref="T:System.Data.Common.DbCommand"/> for a stored procedure.</para>
+            </summary>
+            <param name="storedProcedureName"><para>The name of the stored procedure.</para></param>
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the stored procedure.</para></returns>       
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetStoredProcCommand(System.String,System.Object[])">
+            <summary>
+            <para>Creates a <see cref="T:System.Data.Common.DbCommand"/> for a stored procedure.</para>
+            </summary>
+            <param name="storedProcedureName"><para>The name of the stored procedure.</para></param>
+            <param name="parameterValues"><para>The list of parameters for the procedure.</para></param>
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the stored procedure.</para></returns>
+            <remarks>
+            <para>The parameters for the stored procedure will be discovered and the values are assigned in positional order.</para>
+            </remarks>        
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetStoredProcCommandWithSourceColumns(System.String,System.String[])">
+            <summary>
+            Wraps around a derived class's implementation of the GetStoredProcCommandWrapper method and adds functionality for
+            using this method with UpdateDataSet.  The GetStoredProcCommandWrapper method (above) that takes a params array 
+            expects the array to be filled with VALUES for the parameters. This method differs from the GetStoredProcCommandWrapper 
+            method in that it allows a user to pass in a string array. It will also dynamically discover the parameters for the 
+            stored procedure and set the parameter's SourceColumns to the strings that are passed in. It does this by mapping 
+            the parameters to the strings IN ORDER. Thus, order is very important.
+            </summary>
+            <param name="storedProcedureName"><para>The name of the stored procedure.</para></param>
+            <param name="sourceColumns"><para>The list of DataFields for the procedure.</para></param>
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the stored procedure.</para></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetSqlStringCommand(System.String)">
+            <summary>
+            <para>Creates a <see cref="T:System.Data.Common.DbCommand"/> for a SQL query.</para>
+            </summary>
+            <param name="query"><para>The text of the query.</para></param>        
+            <returns><para>The <see cref="T:System.Data.Common.DbCommand"/> for the SQL query.</para></returns>        
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetDataAdapter">
+            <summary>
+            Gets a DbDataAdapter with Standard update behavior.
+            </summary>
+            <returns>A <see cref="T:System.Data.Common.DbDataAdapter"/>.</returns>
+            <seealso cref="T:System.Data.Common.DbDataAdapter"/>
+            <devdoc>
+            Created this new, public method instead of modifying the protected, abstract one so that there will be no
+            breaking changes for any currently derived Database class.
+            </devdoc>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.GetDataAdapter(Bizentro.AppFramework.DataBridge.UpdateBehavior)">
+            <summary>
+            Gets the DbDataAdapter with the given update behavior and connection from the proper derived class.
+            </summary>
+            <param name="updateBehavior">
+            <para>One of the <see cref="T:Bizentro.AppFramework.DataBridge.UpdateBehavior"/> values.</para>
+            </param>        
+            <returns>A <see cref="T:System.Data.Common.DbDataAdapter"/>.</returns>
+            <seealso cref="T:System.Data.Common.DbDataAdapter"/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.uniDatabase.OnSqlRowUpdated(System.Object,Bizentro.AppFramework.DataBridge.uniRowUpdatedEventArgs)">
+            <devdoc>
+            Listens for the RowUpdate event on a dataadapter to support UpdateBehavior.Continue
+            </devdoc>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.UpdateBehavior">
+            <summary>
+            Used with the Database.UpdateDataSet method. Provides control over behavior when the Data
+            Adapter's update command encounters an error.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.DataBridge.UpdateBehavior.Standard">
+            <summary>
+            No interference with the DataAdapter's Update command. If Update encounters
+            an error, the update stops.  Additional rows in the Datatable are uneffected.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.DataBridge.UpdateBehavior.Continue">
+            <summary>
+            If the DataAdapter's Update command encounters an error, the update will
+            continue. The Update command will try to update the remaining rows. 
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.DataBridge.UpdateBehavior.Transactional">
+            <summary>
+            If the DataAdapter encounters an error, all updated rows will be rolled back.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.GetData(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.GetDataAsync(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.GetDataAsync(System.String[],System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUD(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDAsync(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDAsync(System.String[],System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDNoneTran(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDNoneTranAsync(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDNoneTranAsync(System.String[],System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataCUD(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataCUDAsync(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataCUDAsync(System.String[],System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataAdapterCUD(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataAdapterCUDAsync(System.String[],System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataAdapterCUDAsync(System.String[],System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.GetDataCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.DataCUDNoneTranCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataCUDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.DataBridge.ServiceProxy.DataBridgeFL.ConditionalDataAdapterCUDCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.GetDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.GetDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.DataBridge.ServiceProxy.GetDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDNoneTranCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDNoneTranCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.DataBridge.ServiceProxy.DataCUDNoneTranCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataCUDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataCUDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataCUDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataAdapterCUDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataAdapterCUDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.DataBridge.ServiceProxy.ConditionalDataAdapterCUDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

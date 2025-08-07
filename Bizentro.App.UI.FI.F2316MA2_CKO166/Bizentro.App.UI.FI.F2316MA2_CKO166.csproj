@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11E53426-9BCD-42AB-8D2C-E93365875CB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizentro.App.UI.FI.F2316MA2_CKO166</RootNamespace>
+    <AssemblyName>Bizentro.App.UI.FI.F2316MA2_CKO166</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bizentro.AppFramework.DataBridge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.DataBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Controls, Version=20.2.20202.30, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.InfragisticsCAB.WinForms, Version=1.0.20202.30, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.InfragisticsCAB.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Interface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Module, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Bizentro.AppFramework.UI.Variables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22544ef68a32b57e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\AppFrameworks.iv18.1.177\Bizentro.AppFramework.UI.Variables.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Documents.Excel, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Documents.Excel\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Documents.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Shared, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Shared\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.Misc, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.Misc\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinEditors, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinEditors\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinGrid\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid.ExcelExport, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinGrid.ExcelExport\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinGrid.ExcelExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinMaskedEdit, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinMaskedEdit\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinMaskedEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinSpreadsheet, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinSpreadsheet\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinSpreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTabControl, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Infragistics.Win.UltraWinTabControl\v4.0_18.1.20181.177__7dd5c3163f2cd0cb\Infragistics.Win.UltraWinTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=1.0.51205.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\EnterpriseLibrary\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=1.0.51205.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\EnterpriseLibrary\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\BizWebSmart\UI\Frameworks\EnterpriseLibrary\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="tdsF2316MA1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tdsF2316MA1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleViewer.Designer.cs">
+      <DependentUpon>ModuleViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModuleViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModuleViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tdsF2316MA1.xsc">
+      <DependentUpon>tdsF2316MA1.xsd</DependentUpon>
+    </None>
+    <None Include="tdsF2316MA1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tdsF2316MA1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tdsF2316MA1.xss">
+      <DependentUpon>tdsF2316MA1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0%28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.UI.Providers</name>
+    </assembly>
+    <members>
+        <member name="T:Bizentro.AppFramework.UI.Providers.uniProviderBase">
+            <summary>
+            프로바이더 기반 클래스
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Providers.MessageBoxProvider.Buttons">
+            <summary>
+            메시지 박스의 버튼 스타일
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Providers.MessageBoxProvider.Caption">
+            <summary>
+            메시지 박스의 캡션. 디폴트 값은 "메시지 박스"
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Providers.MessageBoxProvider.Message">
+            <summary>
+            메시지 박스에 표시할 메시지
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Providers.MessageBoxProvider.ImageKind">
+            <summary>
+            메시지 박스 이미지 타입
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Providers.MessageBoxProvider.DetailMessage">
+            <summary>
+            메시지 박스에 표시할 디테일메시지
+            </summary>
+        </member>
+    </members>
+</doc>

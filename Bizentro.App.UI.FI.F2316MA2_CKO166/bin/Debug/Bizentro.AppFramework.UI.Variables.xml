@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.UI.Variables</name>
+    </assembly>
+    <members>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.WidthStyles">
+            <summary>
+            Grid WidthStyles
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.IsHidden">
+            <summary>
+            IsHidden
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.IsRequired">
+            <summary>
+            IsRequired
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.HAlign">
+            <summary>
+            IsHAlign
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.VAlign">
+            <summary>
+            IsVAlign
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.uniSheetHAlign">
+            <summary>
+            Excel Cell HAlign
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.uniSheetVAlign">
+            <summary>
+            Excel Cell VAlign
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.Styles">
+            <summary>
+            Grid Column Control Styles
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.eGridType">
+            <summary>
+            Grid Type Define
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.IsOutlookGroupBy">
+            <summary>
+            Grid Header OutlookGroupBy 표시 여부
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.IsSearch">
+            <summary>
+            그리드 조회 전용 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESProductInfo">
+            <summary>
+            MES 생산관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESProductProc">
+            <summary>
+            MES 공정관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESOutsourcingProc">
+            <summary>
+            MES 외주 관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESOutsourcingCost">
+            <summary>
+            MES 외주비 관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESProductQuality">
+            <summary>
+            MES 품질 관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.MESStatisticalProcCtrl">
+            <summary>
+            MES 통계정공정관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.SQMatreials">
+            <summary>
+            SQ 자재관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.SQQuality">
+            <summary>
+            SQ 품질관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.SQProcess">
+            <summary>
+            SQ 공정관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.SQFacilities">
+            <summary>
+            SQ 설비 보전 관리
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.enumDef.ModuleInformation.SQMold">
+            <summary>
+            SQ 금형관리
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.NumericType">
+            <summary>
+            Number Type Define
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.enumDef.GetMenuInfoKeyType">
+            <summary>
+            use different type of key to make the module's infomation.used in ControlManager(add by limen 2007-9-16)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.Percent4EBR">
+            <summary>
+            EasyBase % => %25
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gClientIP">
+            <summary>
+            Client IP
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gClientNM">
+            <summary>
+            Client PC Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gClientGUID">
+            <summary>
+            Client 접속시의 GUID
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gComDateType">
+            <summary>
+            Company Date Delimiter Parameter
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gComNum1000">
+            <summary>
+            Company Number 1000 indication
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gComNumDec">
+            <summary>
+            Company Number Decimal Point indication
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gCompany">
+            <summary>
+            Company Code
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gLicensedCompany">
+            <summary>
+            License Company Code
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gCompanyNm">
+            <summary>
+            Company Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gCostCenter">
+            <summary>
+            Cost Center
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gCountry">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gCurrency">
+            <summary>
+            Currency
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gUseUniCode">
+            <summary>
+            uni code 사용여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDateFormat">
+            <summary>
+            Company Date format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDateFormatYYYYMM">
+            <summary>
+            Company Date format
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDBServerIP">
+            <summary>
+            DataBase Server IP
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDBServerNm">
+            <summary>
+            DataBase Server Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDBServer">
+            <summary>
+            DataBase Domain Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDatabase">
+            <summary>
+            DataBase Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDBComment">
+            <summary>
+            DataBase Comment
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDBAppType">
+            <summary>
+            DataBase 의 Application Type : iUNOERP, UNIMES의 Database 형상이 틀림.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbDbName">
+            <summary>
+            EASYBASE DB Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbEnginePath">
+            <summary>
+            EASYBASE Engine Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbEnginePath5">
+            <summary>
+            EASYBASE Engine Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbPkgRptPath">
+            <summary>
+            EASYBASE Package Report Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbPkgRptPath5">
+            <summary>
+            EASYBASE Package Report Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbUserName">
+            <summary>
+            EASYBASE User Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbUserPass">
+            <summary>
+            EASYBASE User Password
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbUsrRptPath">
+            <summary>
+            EASYBASE User Report Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEbUsrRptPath5">
+            <summary>
+            EASYBASE User Report Path
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gFocusSkip">
+            <summary>
+            Variable that indicates "Don't Care about Focus of Current Document"
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gWebClientProtocolTimeout">
+            <summary>
+            default : 100000 milisecond
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSqlCommandCommandTimeout">
+            <summary>
+            default : 30 second , 0 : Infinite
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSystemTransactionTimeout">
+            <summary>
+            default : 60 second
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.IsAdminMode">
+            <summary>
+            현재 실행 모드가 관리자 권한인지 확인
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSeverity">
+            <summary>
+            Message Log Level
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gUsrEngName">
+            <summary>
+            사용자 영어 이름
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gUsrID">
+            <summary>
+            사용자 ID
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gUsrNm">
+            <summary>
+            사용자명
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.REVISION_YM">
+            <summary>
+            세무회계 버전관리 
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gServerDateType">
+            <summary>
+            '-'
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gMinimumDate">
+            <summary>
+            1900-01-01
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gMaximumDate">
+            <summary>
+            2999-12-31
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_YYYY_MM_DD">
+            <summary>
+            yyyy-MM-dd
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_YYYY_MM">
+            <summary>
+            yyyy-MM
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_YYYYMMDD">
+            <summary>
+            yyyyMMdd
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_YYYYMM">
+            <summary>
+            yyyyMM
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_YYYY">
+            <summary>
+            yyyy
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_MM">
+            <summary>
+            MM
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.CDT_DD">
+            <summary>
+            dd
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gDsMenu">
+            <summary>
+            Main Menu 및 Config에 대한 정보를 가지고 있는 DataSet
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.LoginState">
+            <summary>
+            The state of the user login
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gEmpNo">
+            <summary>
+            ESS
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSTN_COMPANY_CODE">
+            <summary>
+            StarNet Company Code
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSTN_COMPANY_NAME">
+            <summary>
+            StarNet Company Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSTN_SELLER_CODE">
+            <summary>
+            StarNet Seller Code
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSTN_SELLER_NAME">
+            <summary>
+            StarNet Seller Name
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gUseDuplicateMenu">
+            <summary>
+            프로그램 중복 실행 가능 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gMaxDuplicateMenu">
+            <summary>
+            프로그램 중복 실행 최대 개수
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gMaxExecuteMenu">
+            <summary>
+            메뉴 최대 실행 개수
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gConnTimeoutAutoShutdown">
+            <summary>
+            접속 제한 시간 만료 시 자동 종료 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gConnTimeoutReEnterPwd">
+            <summary>
+            접속 제한 시간 만료 시 비밀번호 문의 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gConnTimeoutRetryPwdCnt">
+            <summary>
+            접속 제한 시간 만료 시 비밀번호 재시도 횟수
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.ShellPlatform">
+            <summary>
+            Main Shell의 실행 Platform Version
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gAgentAddress">
+            <summary>
+            for create channel in uconfig. add by limeng
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gIsExcelTempSave">
+            <summary>
+            Excel 임시 저장 사용 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gExcelTempFolder">
+            <summary>
+            Excel 임시 저장위치
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gExcelTempDeadline">
+            <summary>
+            Excel 임시 저장파일 삭제 기한(일)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gAddExcelDateFormat">
+            <summary>
+            Excel 파일명에 추가할 날짜 형식(시간 포함)
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gIsCloudConnect">
+            <summary>
+            Cloud 접속 여부
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gSiteDefVariables">
+            <summary>
+            Sited에서 사용하고 싶은 정의 전역변수
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gModDefVariables">
+            <summary>
+            표준 모듈 정의 전역 변수
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Variables.CommonVariable.gHotkey">
+            <summary>
+            Hotkey 2008-12-29 by name
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Variables.CommonVariable.gAPServer">
+            <summary>
+            Aplication Server IP Or Domain Name
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Variables.CommonVariable.gAPServerHttpAddress">
+            <summary>
+            Aplication Server IP Or Domain Name
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Variables.CommonVariable.gAPServerUseSSL">
+            <summary>
+            Aplication Server IP Or Domain Name
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Variables.CommonVariable.gReportServer">
+            <summary>
+            Report Server IP Or Domain Name
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Variables.CommonVariable.gLang">
+            <summary>
+            현재 설정된 언어코드
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.CommonVariable.TAX_COMMON_VARIABLE">
+            <summary>
+            2007-09-18 부가세/법인세 관련 변수 추가 
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Variables.CommonVariable.ExternalServiceKindInfomation">
+            <summary>
+            2013-10-29 외부 연결 모듈 정보 
+            </summary>
+        </member>
+    </members>
+</doc>

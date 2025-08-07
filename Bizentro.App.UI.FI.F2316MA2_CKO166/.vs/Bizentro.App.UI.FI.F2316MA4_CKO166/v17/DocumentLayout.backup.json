@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BIZENTRO.NET\\Bizentro\\App\\UI\\FI\\Bizentro.App.UI.FI.F2316MA2_CKO166\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11E53426-9BCD-42AB-8D2C-E93365875CB4}|Bizentro.App.UI.FI.F2316MA4_CKO166.csproj|d:\\bizentro.net\\bizentro\\app\\ui\\fi\\bizentro.app.ui.fi.f2316ma2_cko166\\moduleviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11E53426-9BCD-42AB-8D2C-E93365875CB4}|Bizentro.App.UI.FI.F2316MA4_CKO166.csproj|solutionrelative:moduleviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11E53426-9BCD-42AB-8D2C-E93365875CB4}|Bizentro.App.UI.FI.F2316MA4_CKO166.csproj|d:\\bizentro.net\\bizentro\\app\\ui\\fi\\bizentro.app.ui.fi.f2316ma2_cko166\\moduleviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11E53426-9BCD-42AB-8D2C-E93365875CB4}|Bizentro.App.UI.FI.F2316MA4_CKO166.csproj|solutionrelative:moduleviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModuleViewer.cs",
+              "DocumentMoniker": "D:\\BIZENTRO.NET\\Bizentro\\App\\UI\\FI\\Bizentro.App.UI.FI.F2316MA2_CKO166\\ModuleViewer.cs",
+              "RelativeDocumentMoniker": "ModuleViewer.cs",
+              "ToolTip": "D:\\BIZENTRO.NET\\Bizentro\\App\\UI\\FI\\Bizentro.App.UI.FI.F2316MA2_CKO166\\ModuleViewer.cs",
+              "RelativeToolTip": "ModuleViewer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:26:21.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModuleViewer.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\BIZENTRO.NET\\Bizentro\\App\\UI\\FI\\Bizentro.App.UI.FI.F2316MA2_CKO166\\ModuleViewer.cs",
+              "RelativeDocumentMoniker": "ModuleViewer.cs",
+              "ToolTip": "D:\\BIZENTRO.NET\\Bizentro\\App\\UI\\FI\\Bizentro.App.UI.FI.F2316MA2_CKO166\\ModuleViewer.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "ModuleViewer.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:26:18.928Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

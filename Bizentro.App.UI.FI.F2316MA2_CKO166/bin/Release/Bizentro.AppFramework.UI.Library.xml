@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.UI.Library</name>
+    </assembly>
+    <members>
+        <member name="M:Bizentro.AppFramework.UI.Library.BuilderStrategies.ActionStrategy.RegisterActionImplementation(Microsoft.Practices.ObjectBuilder.IBuilderContext,Bizentro.AppFramework.UI.Interface.Services.IActionCatalogService,System.Object,System.String,System.Reflection.MethodInfo)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="catalog"></param>
+            <param name="existing"></param>
+            <param name="idToBuild"></param>
+            <param name="methodInfo"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.BuilderStrategies.ActionStrategy.GetWorkItem(Microsoft.Practices.ObjectBuilder.IBuilderContext,System.Object)">
+            <summary>
+            WorkItems 호출
+            </summary>
+            <param name="context"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.AddServicesCalled">
+            <summary>
+              Looks up a localized string similar to AddServices() method called for Module {0}..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.DependencyNotFound">
+            <summary>
+              Looks up a localized string similar to Section &apos;{0}&apos; depends on section &apos;{1}&apos; which was not found..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.DuplicatedModule">
+            <summary>
+              Looks up a localized string similar to A duplicated module with name {0} has been found by the loader..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.FailedToLoadModule">
+             <summary>
+               Looks up a localized string similar to Failed to load module from assembly {0}. Error was:
+            {1}.
+             </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.InvalidSolutionProfileSchema">
+            <summary>
+              Looks up a localized string similar to The solution profile references an unknown schema..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.LogModuleAdded">
+            <summary>
+              Looks up a localized string similar to Module {0} added to the container..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.LogModuleAssemblyLoaded">
+            <summary>
+              Looks up a localized string similar to Loaded assembly file {0} for Module..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ModuleNotFound">
+            <summary>
+              Looks up a localized string similar to Assembly file {0} was not found..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ModuleStartCalled">
+            <summary>
+              Looks up a localized string similar to Load() method called for Module {0}..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.NoUserProvidedForAuthentication">
+            <summary>
+              Looks up a localized string similar to No user was selected for the authentication service..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ReferencedAssemblyNotFound">
+            <summary>
+              Looks up a localized string similar to The ModuleLoaderService cannot initialize the module because some of their dependencies are not present. Make sure to deploy all the assemblies needed to execute the module..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ServiceAdded">
+            <summary>
+              Looks up a localized string similar to Service {1} added for Module {0}..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.ServiceAddedOnDemand">
+            <summary>
+              Looks up a localized string similar to Service {1} will be added on demand for Module {0}..
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Properties.Resources.UserNotFoundMessage">
+            <summary>
+              Looks up a localized string similar to There is no a user matching the information you have provided..
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.CachedAssemblyResolveService.GetTestAssemblyPath(Bizentro.AppFramework.UI.Interface.Services.LoadingModuleInfo)">
+            <summary>
+            개발 당시 테스트 어셈블리 로딩
+            </summary>
+            <param name="moduleInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.CachedAssemblyResolveService.GetProductionAssembly(Bizentro.AppFramework.UI.Interface.Services.LoadingModuleInfo)">
+            <summary>
+            정식 제품에서 어셈블리 로딩
+            </summary>
+            <param name="moduleInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.DependentModuleInfo">
+            <summary>
+             각 단위 화면을 로드한다.
+             
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService">
+            <summary>
+            Service to load modules into the application.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.#ctor(System.Diagnostics.TraceSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Practices.CompositeUI.Services.ModuleLoaderService"/> class with the
+            provided trace source.
+            </summary>
+            <param name="traceSource">The trace source for tracing. If null is
+            passed, the service does not perform tracing.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.Load(Microsoft.Practices.CompositeUI.WorkItem,Microsoft.Practices.CompositeUI.Configuration.IModuleInfo[])">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.Services.IModuleLoaderService.Load(Microsoft.Practices.CompositeUI.WorkItem,Microsoft.Practices.CompositeUI.Configuration.IModuleInfo[])"/> for more information.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.Load(Microsoft.Practices.CompositeUI.WorkItem,System.Reflection.Assembly[])">
+            <summary>
+            See <see cref="M:Microsoft.Practices.CompositeUI.Services.IModuleLoaderService.Load(Microsoft.Practices.CompositeUI.WorkItem,System.Reflection.Assembly[])"/> for more information.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.OnModuleLoaded(Microsoft.Practices.CompositeUI.Services.LoadedModuleInfo)">
+            <summary>
+            Fires the ModuleLoaded event.
+            </summary>
+            <param name="module">The module that was loaded.</param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.LoadAssemblies(Microsoft.Practices.CompositeUI.Configuration.IModuleInfo[])">
+            <summary>
+             강동훈 수정 2007.07.16
+            </summary>
+            <param name="assemblyFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.LoadAssembly(System.String)">
+            <summary>
+             강동훈 수정 2007.07.10
+            </summary>
+            <param name="assemblyFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.GuardLegalAssemblyFile(Microsoft.Practices.CompositeUI.Configuration.IModuleInfo)">
+            <summary>
+             강동훈 수정 2007.07.10
+            </summary>
+            <param name="modInfo"></param>
+        </member>
+        <member name="E:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.ModuleLoaded">
+            <summary>
+            See <see cref="E:Microsoft.Practices.CompositeUI.Services.IModuleLoaderService.ModuleLoaded"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.LoadedModules">
+            <summary>
+            See <see cref="P:Microsoft.Practices.CompositeUI.Services.IModuleLoaderService.LoadedModules"/> for more information.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.DependentModuleLoaderService.ClassNameTraceSourceAttribute.#ctor">
+            <summary>
+            Initializes the attribute using the <see cref="T:Microsoft.Practices.CompositeUI.Services.IModuleLoaderService"/> 
+            interface namespace as the source name.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.IModuleInfoStore">
+            <summary>
+             모듈리스트 호출
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.ProfileCatalogModuleInfoStore">
+            <summary>
+            로컬에서 모듈리스트를 호출하기위한 클래스
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.WorkspaceLocatorService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.Services.XmlStreamDependentModuleEnumerator">
+            <summary>
+            This implementation of IModuleEnumerator processes the assemblies specified
+            in a solution profile.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.XmlStreamDependentModuleEnumerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XmlStreamDependentModuleEnumerator"/> class.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.Services.XmlStreamDependentModuleEnumerator.EnumerateModules">
+            <summary>
+            Gets an array of <see cref="T:Microsoft.Practices.CompositeUI.Configuration.IModuleInfo"/>
+            enumerated from the source the enumerator is processing.
+            </summary>
+            <returns>
+            An array of <see cref="T:Microsoft.Practices.CompositeUI.Configuration.IModuleInfo"/> instances.
+            </returns>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SmartClientApplication`2">
+            <summary>
+            어플리케이션 진입점
+            </summary>
+            <typeparam name="TWorkItem"></typeparam>
+            <typeparam name="TShell"></typeparam>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV1.SolutionProfileElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV1.SolutionProfileElement.Modules">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV1.ModuleInfoElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV1.ModuleInfoElement.Roles">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV1.ModuleInfoElement.AssemblyFile">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV1.ModuleInfoElement.UpdateLocation">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV1.RoleElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV1.RoleElement.Allow">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SolutionProfileElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SolutionProfileElement.Section">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SectionElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SectionElement.Dependencies">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SectionElement.Modules">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.SectionElement.Name">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV2.DependencyElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.DependencyElement.Name">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV2.RoleElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.RoleElement.Allow">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.SolutionProfileV2.ModuleInfoElement">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.ModuleInfoElement.Dependencies">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.ModuleInfoElement.Roles">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.ModuleInfoElement.AssemblyFile">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.SolutionProfileV2.ModuleInfoElement.Name">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfAssemblyModified(System.String,System.String,System.DateTime,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfAssemblyModifiedAsync(System.String,System.String,System.DateTime,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfAssemblyModifiedAsync(System.String,System.String,System.DateTime,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfFileModified(System.String,System.String,System.DateTime,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfFileModifiedAsync(System.String,System.String,System.DateTime,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfFileModifiedAsync(System.String,System.String,System.DateTime,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfAssemblyModifiedCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyManager.IfFileModifiedCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyCheckResult">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyCheckResult.Modified">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.WSAssemblyManager.AssemblyCheckResult.ServerFileTime">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfAssemblyModifiedCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfAssemblyModifiedCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfAssemblyModifiedCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfFileModifiedCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfFileModifiedCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Library.WSAssemblyManager.IfFileModifiedCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

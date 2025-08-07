@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bizentro.AppFramework.UI.Interface</name>
+    </assembly>
+    <members>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Constants.CommandNames">
+            <summary>
+            Constants for command names.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Constants.EventTopicNames">
+            <summary>
+            Constants for event topic names.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames">
+            <summary>
+            Constants for UI extension site names.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.MainMenu">
+            <summary>
+            The extension site for the main menu.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.MainToolbar">
+            <summary>
+            The extension site for the main toolbar.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.MainStatus">
+            <summary>
+            The extension site for the main status bar.
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.RibbonToolbar">
+            <summary>
+             RibbonToolbar  
+             </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.RightWorkspacePanel">
+            <summary>
+             Mdi 화면이 없는 경우 표시할 SmartParts 표시 영역
+            </summary>
+        </member>
+        <member name="F:Bizentro.AppFramework.UI.Interface.Constants.UIExtensionSiteNames.MdiTabWorkspace">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Constants.WorkspaceNames">
+            <summary>
+            Constants for workspace names.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Commands.CommandWithCallback`2.#ctor(`0,System.Int32,Bizentro.AppFramework.UI.Interface.Commands.CommandWithCallback{`0,`1}.CallbackType)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+            <param name="timeout"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Commands.CommandWithCallback`2.DoExecute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Services.IWorkspaceLocatorService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.ActionAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.ControlledWorkItem`1">
+            <summary>
+            Represents a WorkItem that uses a WorkItem controller to perform its business logic.
+            </summary>
+            <typeparam name="TController"></typeparam>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ControlledWorkItem`1.OnBuiltUp(System.String)">
+            <summary>
+            See <see cref="M:Microsoft.Practices.ObjectBuilder.IBuilderAware.OnBuiltUp(System.String)"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.ControlledWorkItem`1.Controller">
+            <summary>
+            Gets the controller.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.EventArgs`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.IWorkItemController">
+            <summary>
+            Controller used by <see cref="T:Bizentro.AppFramework.UI.Interface.ControlledWorkItem`1"/>.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.IWorkItemController.Run">
+            <summary>
+            Called when the controller is ready to run.
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.Presenter`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TView"></typeparam>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Presenter`1.CloseView">
+            <summary>
+             View를 제거한다.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Presenter`1.OnViewReady">
+            <summary>
+             Base Module을 통해 개발
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Presenter`1.Dispose">
+            <summary>
+            See <see cref="M:System.IDisposable.Dispose"/> for more information.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.Presenter`1.Dispose(System.Boolean)">
+            <summary>
+            Called when the object is being disposed or finalized.
+            </summary>
+            <param name="disposing">True when the object is being disposed (and therefore can
+            access managed members); false when the object is being finalized without first
+            having been disposed (and therefore can only touch unmanaged members).</param>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.Presenter`1.View">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.Presenter`1.WorkItem">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.ServiceProxy`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TService"></typeparam>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.#ctor(`0)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.ThreadHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.ServiceProxy`1.Queue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bizentro.AppFramework.UI.Interface.WorkItemController">
+            <summary>
+            Base class for a WorkItem controller.
+            </summary>
+        </member>
+        <member name="M:Bizentro.AppFramework.UI.Interface.WorkItemController.Run">
+            <summary>
+            Application Run BaseClass
+            </summary>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.WorkItemController.WorkItem">
+            <summary>
+            Gets or sets the work item.
+            </summary>
+            <value>The work item.</value>
+        </member>
+        <member name="P:Bizentro.AppFramework.UI.Interface.WorkItemController.ActionCatalogService">
+            <summary>
+             Service List 
+            </summary>
+        </member>
+    </members>
+</doc>
